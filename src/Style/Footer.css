@@ -1,0 +1,124 @@
+.footer {
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1), 0 -2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+}
+.footer nav {
+  padding: 40px;
+}
+.footer nav .navlist {
+  padding: 32px 0;
+  margin: 32px 0;
+  max-width: 1440px;
+  display: flex;
+  border-bottom: 2px solid rgb(223, 223, 223);
+}
+.footer nav .navlist .margin-ul {
+  margin-left: 40px;
+}
+.footer nav .navlist ul h2 {
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.footer nav .navlist ul li {
+  max-width: 200px;
+  padding: 18px 0;
+}
+.footer nav .navlist ul li a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.58);
+}
+.footer nav .navlist ul li a:hover {
+  color: black;
+}
+.footer nav .navlist .footer-response {
+  display: none;
+  width: 100%;
+}
+.footer nav .navlist .footer-response .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+  transition: all 300ms;
+}
+.footer nav .navlist .footer-response .box .h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer nav .navlist .footer-response .box .icon {
+  transition: all 300ms;
+}
+.footer nav .navlist .footer-response .box .icon2 {
+  transform: rotate(180deg);
+  transition: all 300ms;
+}
+.footer nav .navlist .footer-response .box ul {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: block;
+}
+@media (max-width: 575px) {
+  .footer nav .navlist .footer-response {
+    display: block;
+  }
+}
+.footer nav .footer-bottom .social a {
+  position: relative;
+  transition: all 300ms;
+}
+.footer nav .footer-bottom .social a svg {
+  height: 42px;
+  overflow: visible;
+  width: 32px;
+}
+.footer nav .footer-bottom .social a:hover::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(223, 223, 223, 0.5803921569);
+  border-radius: 100%;
+  z-index: -1;
+  top: -33px;
+  left: -5px;
+  padding: 18px;
+}
+.footer nav .footer-bottom .bottom ul {
+  display: flex;
+}
+.footer nav .footer-bottom .bottom ul li {
+  padding-right: 1.8rem;
+}
+.footer nav .footer-bottom .bottom ul li span {
+  padding-right: 1.8rem;
+}
+.footer nav .footer-bottom .bottom ul li a {
+  font-size: 16px;
+  color: black;
+}
+.footer nav .footer-bottom .bottom ul li a:hover {
+  text-decoration: underline;
+}
+.footer nav .footer-bottom .bottom p {
+  margin-top: 1.3rem;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.58);
+}
+@media (max-width: 575px) {
+  .footer .navlist ul {
+    display: none;
+  }
+  .footer .footer-bottom .bottom ul {
+    flex-direction: column;
+  }
+  .footer .footer-bottom .bottom ul li {
+    padding: 8px 0;
+  }
+  .footer .footer-bottom .bottom ul li span {
+    display: none;
+  }
+}/*# sourceMappingURL=Footer.css.map */

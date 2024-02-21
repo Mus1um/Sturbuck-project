@@ -1,0 +1,307 @@
+.rewards .banner {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1215686275), 0 0 2px 0 rgba(0, 0, 0, 0.2392156863);
+  height: 50px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #1e3932;
+}
+.rewards .banner h1 {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 15px 140px;
+}
+.rewards section .section-top {
+  background-color: rgb(212, 233, 226);
+  background-image: url("../Images/star-web.webp");
+  background-position: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.rewards section .section-top .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.rewards section .section-top .left .text h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.29;
+  width: 300px;
+}
+.rewards section .section-top .left .text a {
+  border-radius: 50px;
+  padding: 8px;
+  color: white;
+  background-color: #00754a;
+  display: inline-block;
+}
+.rewards section .section-top .left .text p {
+  font-weight: 400;
+  padding: 18px 0px;
+  font-size: 20px;
+}
+.rewards section .section-center {
+  margin: 32px 0;
+}
+.rewards section .section-center .getting {
+  padding: 40px;
+  text-align: center;
+}
+.rewards section .section-center .getting .top {
+  margin-bottom: 32px;
+}
+.rewards section .section-center .getting .top h2 {
+  font-weight: 500;
+  line-height: 1.385;
+  font-size: 2.4rem;
+}
+.rewards section .section-center .getting .top p {
+  padding-top: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+}
+.rewards section .section-center .getting .top-two {
+  text-align: center;
+}
+.rewards section .section-center .getting .top-two p {
+  display: inline-block;
+  width: 800px;
+}
+.rewards section .section-center .getting .process {
+  display: flex;
+  justify-content: center;
+}
+.rewards section .section-center .getting .process .box {
+  margin-left: 32px;
+}
+.rewards section .section-center .getting .process .box img {
+  width: 112px;
+  margin-bottom: 32px;
+}
+.rewards section .section-center .getting .process .box h1 {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #00754a;
+  border: 1px solid #00754a;
+  border-radius: 100%;
+  margin-bottom: 12px;
+}
+.rewards section .section-center .getting .process .box h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.rewards section .section-center .getting .process .box p {
+  text-align: center;
+  letter-spacing: 1.2px;
+  width: 410px;
+  font-weight: 400;
+}
+.rewards section .section-center .getting .process .box .modal {
+  cursor: pointer;
+  padding: 16px 0;
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-center .getting .process .box .modal:hover {
+  text-decoration: none;
+}
+.rewards section .section-center .favorites {
+  padding: 108px 0;
+}
+.rewards section .section-center .favorites .top {
+  padding-top: 48px;
+  box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.1411764706);
+  background-color: rgba(211, 232, 225, 0.3294117647);
+  text-align: center;
+}
+.rewards section .section-center .favorites .top h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.3;
+  padding-bottom: 2.6rem;
+}
+.rewards section .section-center .favorites .top .stars {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+  transition: width 2s;
+}
+.rewards section .section-center .favorites .top .stars button {
+  border: none;
+  background-color: transparent;
+  padding-bottom: 20px;
+  transition: width 300ms;
+}
+.rewards section .section-center .favorites .top .stars button span:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.rewards section .section-center .favorites .bottom {
+  background-color: rgb(212, 233, 226);
+}
+.rewards section .section-center .favorites .bottom .card {
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+.rewards section .section-center .favorites .bottom .card img {
+  height: 100%;
+  width: 375px;
+}
+.rewards section .section-center .favorites .bottom .card .text {
+  width: 320px;
+}
+.rewards section .section-center .favorites .bottom .card .text h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.rewards section .section-center .favorites .bottom .card .text p {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.rewards section .section-center .cash-card {
+  background-color: #f2f0eb;
+  padding: 62px 0;
+  margin-top: 82px;
+}
+.rewards section .section-center .cash-card .top {
+  text-align: center;
+}
+.rewards section .section-center .cash-card .top h1 {
+  line-height: 1.385;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.rewards section .section-center .cash-card .top p {
+  padding-top: 1.3rem;
+  width: 680px;
+  display: inline-block;
+  font-weight: 400;
+}
+.rewards section .section-center .cash-card .bottom {
+  padding: 60px 0;
+}
+.rewards section .section-center .cash-card .bottom .dollar {
+  display: flex;
+  justify-content: center;
+}
+.rewards section .section-center .cash-card .bottom .dollar .card {
+  margin-right: 102px;
+}
+.rewards section .section-center .cash-card .bottom .dollar .card h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.rewards section .section-center .cash-card .bottom .dollar .card p {
+  text-align: left;
+  padding-top: 10px;
+}
+.rewards section .section-center .cash-card .bottom .dollar .cart {
+  display: flex;
+  margin-left: 32px;
+}
+.rewards section .section-center .cash-card .bottom .dollar .cart img {
+  width: 112px;
+}
+.rewards section .section-center .cash-card .bottom .dollar .cart .cart-right {
+  margin-left: 12px;
+}
+.rewards section .section-center .cash-card .bottom .dollar .cart .cart-right h3 {
+  padding-bottom: 12px;
+  font-weight: 500;
+}
+.rewards section .section-center .cash-card .bottom .dollar .cart .cart-right p {
+  width: 300px;
+}
+.rewards section .section-center .cash-card .bottom .dollar:nth-child(1) {
+  margin-bottom: 62px;
+}
+.rewards section .section-bottom .text-center {
+  display: grid;
+  justify-content: center;
+  padding: 100px 0;
+}
+.rewards section .section-bottom .text-center h2 {
+  font-weight: 500;
+  line-height: 1.3;
+  padding-bottom: 1.3rem;
+  font-size: 2rem;
+}
+.rewards section .section-bottom .text-center p {
+  width: 670px;
+  font-weight: 400;
+}
+.rewards section .section-bottom .text-center p a {
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-bottom .text-center p a:hover {
+  text-decoration: none;
+}
+.rewards section .section-bottom .text-bottom {
+  padding: 100px;
+  background-color: #f9f9f9;
+  margin-bottom: 40px;
+}
+.rewards section .section-bottom .text-bottom .alltexts .text-top {
+  padding-bottom: 40px;
+}
+.rewards section .section-bottom .text-bottom .alltexts .text-top h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.rewards section .section-bottom .text-bottom .alltexts .text-top p {
+  font-size: 14px;
+  padding-right: 70px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.rewards section .section-bottom .text-bottom .alltexts .text-top p a {
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-bottom .text-bottom .alltexts .text-top p a:hover {
+  text-decoration: none;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts {
+  display: flex;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .box {
+  width: 800px;
+  padding-bottom: 32px;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .box h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5803921569);
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p {
+  font-size: 14px;
+  padding-top: 20px;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p a {
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p a:hover {
+  text-decoration: none;
+}
+.rewards section .section-bottom .text-bottom .alltexts .texts .texts-left {
+  padding-right: 40px;
+}/*# sourceMappingURL=Rewards.css.map */

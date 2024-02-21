@@ -1,0 +1,173 @@
+.home section {
+  padding: 32px 40px;
+}
+.home section .reverse-section {
+  flex-direction: row-reverse;
+}
+.home section .home-card {
+  margin: 32px 0;
+  display: flex;
+}
+.home section .home-card:nth-child(2) .card-right {
+  background-color: #ecaed8;
+}
+.home section .home-card:nth-child(2) .card-right .text h1 {
+  font-size: 50px;
+}
+.home section .home-card:nth-child(2) .card-right .text p {
+  font-size: 24px;
+}
+.home section .home-card:nth-child(2) .card-right .text a {
+  background-color: #ecaed8;
+}
+.home section .home-card:nth-child(3) .card-right {
+  background-color: #552200;
+}
+.home section .home-card:nth-child(3) .card-right .text h1 {
+  font-size: 50px;
+  color: white;
+}
+.home section .home-card:nth-child(3) .card-right .text p {
+  color: white;
+  font-size: 24px;
+}
+.home section .home-card:nth-child(3) .card-right .text a {
+  color: white;
+  background-color: #552200;
+  border: 1px solid white;
+}
+.home section .home-card:nth-child(4) .card-right {
+  background-color: #efabfc;
+}
+.home section .home-card:nth-child(4) .card-right .text h1 {
+  font-size: 50px;
+}
+.home section .home-card:nth-child(4) .card-right .text p {
+  font-size: 24px;
+}
+.home section .home-card:nth-child(4) .card-right .text a {
+  background-color: #efabfc;
+}
+.home section .home-card:nth-child(5) .card-right {
+  background-color: #efabfc;
+}
+.home section .home-card:nth-child(5) .card-right .text h1 {
+  font-size: 50px;
+}
+.home section .home-card:nth-child(5) .card-right .text p {
+  font-size: 24px;
+}
+.home section .home-card:nth-child(5) .card-right .text a {
+  background-color: #efabfc;
+}
+.home section .home-card:nth-child(6) .card-right {
+  background-color: #e99264;
+}
+.home section .home-card:nth-child(6) .card-right .text h1 {
+  font-size: 50px;
+}
+.home section .home-card:nth-child(6) .card-right .text p {
+  font-size: 24px;
+}
+.home section .home-card:nth-child(6) .card-right .text a {
+  background-color: #e99264;
+}
+.home section .home-card:nth-child(7) .card-right {
+  background-color: #006241;
+}
+.home section .home-card:nth-child(7) .card-right .text h1 {
+  color: white;
+}
+.home section .home-card:nth-child(7) .card-right .text p {
+  color: white;
+}
+.home section .home-card:nth-child(7) .card-right .text a {
+  color: white;
+  border: 1px solid white;
+  background-color: #006241;
+}
+.home section .home-card:nth-child(8) .card-right {
+  background-color: #006241;
+}
+.home section .home-card:nth-child(8) .card-right .text h1 {
+  color: white;
+}
+.home section .home-card:nth-child(8) .card-right .text p {
+  color: white;
+}
+.home section .home-card:nth-child(8) .card-right .text a {
+  color: white;
+  border: 1px solid white;
+  background-color: #006241;
+}
+.home section .home-card .card-left {
+  width: 50%;
+}
+.home section .home-card .card-left img {
+  width: 100%;
+  height: 100%;
+}
+.home section .home-card .card-right {
+  background-color: #bbf2d1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home section .home-card .card-right .text {
+  max-width: 650px;
+  text-align: center;
+}
+.home section .home-card .card-right .text h1 {
+  font-size: 28px;
+  color: #1e3932;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+}
+.home section .home-card .card-right .text p {
+  line-height: 30px;
+  letter-spacing: 1.55px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #1e3932;
+  margin-bottom: 32px;
+}
+.home section .home-card .card-right .text a {
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: #bbf2d1;
+  font-weight: 600;
+  font-size: 19px;
+  display: inline-block;
+  padding: 7px 16px;
+  color: #1e3932;
+  transition: 0.5s;
+}
+.home section .home-card .card-right .text a:hover {
+  background-color: rgba(30, 57, 50, 0.1019607843);
+}
+.home section .text-bottom {
+  display: flex;
+  justify-content: center;
+}
+.home section .text-bottom p {
+  max-width: 46.1538461538em;
+  color: #000000;
+  line-height: 1.8;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .home section {
+    padding: 0;
+  }
+  .home section .home-card {
+    display: block;
+  }
+  .home section .home-card .card-left {
+    width: 100%;
+  }
+  .home section .home-card .card-right {
+    width: 100%;
+    padding: 40px 0;
+  }
+}/*# sourceMappingURL=Home.css.map */

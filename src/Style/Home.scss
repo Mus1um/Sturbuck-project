@@ -1,0 +1,208 @@
+.home {
+  section {
+    padding: 32px 40px;
+    .reverse-section{
+        flex-direction: row-reverse;
+    }
+    .home-card {
+        margin: 32px 0;
+      display: flex;
+      &:nth-child(2){
+        .card-right{
+            background-color: #ecaed8;
+            .text{
+            h1{
+            font-size: 50px;
+            }
+            p{
+font-size: 24px;
+            }
+            a{
+              background-color: #ecaed8;
+            }
+            }
+        }
+      }
+      &:nth-child(3){
+        .card-right{
+            background-color:#552200;
+            .text{
+              h1{
+  font-size: 50px;
+  color: white;
+              }
+              p{
+  color: white;
+  font-size: 24px;
+              }
+              a{
+                color: white;
+                background-color:#552200;
+                border:1px solid white;
+              }
+              }
+        }
+      }
+      &:nth-child(4){
+        .card-right{
+            background-color:#efabfc;
+            .text{
+              h1{
+            font-size: 50px;
+              }
+              p{
+            font-size: 24px;
+              }
+              a{
+                background-color:#efabfc;
+              }
+              }
+        }
+      }
+      &:nth-child(5){
+        .card-right{
+            background-color:#efabfc;
+            .text{
+              h1{
+  font-size: 50px;
+              }
+              p{
+  font-size: 24px;
+              }
+              a{
+                background-color:#efabfc; 
+              }
+              }
+        }
+      }
+      &:nth-child(6){
+        .card-right{
+            background-color:#e99264;
+            .text{
+              h1{
+            font-size: 50px;
+              }
+              p{
+            font-size: 24px;
+              }
+              a{ background-color:#e99264;
+                
+              }
+              }
+        }
+      }
+      &:nth-child(7){
+        .card-right{
+            background-color:#006241;
+            .text{
+              h1{
+ 
+  color: white;
+              }
+              p{
+
+  color: white;
+              }
+              a{
+                color: white;
+                border: 1px solid white;
+                background-color:#006241;
+              }
+              }   
+        }
+      }
+      &:nth-child(8){
+        .card-right{
+            background-color:#006241;
+            .text{
+              h1{
+
+  color: white;
+              }
+              p{
+  
+  color: white;
+              }
+              a{
+                color: white;
+                border: 1px solid white;
+                background-color:#006241;
+              }
+        }
+      }}
+      .card-left {
+        width: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .card-right {
+        background-color: #bbf2d1;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+          max-width: 650px;
+          text-align: center;
+          h1 {
+            font-size: 28px;
+            color: #1e3932;
+            margin-bottom: 24px;
+            letter-spacing: 1.5px;
+          }
+          p {
+            line-height: 30px;
+            letter-spacing: 1.55px;
+            font-weight: 400;
+            font-size: 22px;
+            color: #1e3932;
+            margin-bottom: 32px;
+          }
+
+          a {
+            border-radius: 50px;
+            border: 1px solid black;
+            background-color: #bbf2d1;
+            font-weight: 600;
+            font-size: 19px;
+            display: inline-block;
+            padding: 7px 16px;
+            color: #1e3932;
+            transition: 0.5s;
+            &:hover {
+              background-color: #1e39321a;
+            }
+          }
+        }
+      }
+    }
+    .text-bottom{
+  display: flex;
+  justify-content: center;
+      p{
+        max-width: calc(1em * (calc(600 / 13)));;
+       
+        color: #000000;
+      line-height: 1.8;
+  text-align: center;
+      }
+    }
+    @media (max-width:575px){
+      padding: 0;
+      .home-card{
+        display: block;
+       .card-left{
+        width: 100%;
+       }
+       .card-right{
+        width: 100%;
+        padding: 40px 0;
+       }
+      }
+    }
+  
+  }
+
+}
