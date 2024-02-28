@@ -13,18 +13,21 @@ import foto100 from "../Images/100.webp";
 import foto200 from "../Images/200.webp";
 import foto300 from "../Images/300.webp";
 import foto400 from "../Images/400.webp";
+import america from '../Images/bank-of-america.webp'
+import skymiles from '../Images/delta-skymiles.webp'
+
 
 function Rewards() {
   const [selectedCard, setSelectedCard] = useState(false);
   const handleButtonClick = (index) => {
-    setSelectedCard(index === selectedCard  ? false : index);
-    if(index===selectedCard){
-      setSelectedCard(index)
+    setSelectedCard(index === selectedCard ? false : index);
+    if (index === selectedCard) {
+      setSelectedCard(index);
     }
   };
-  useEffect(()=>{
-  setSelectedCard(1)
-  },[])
+  useEffect(() => {
+    setSelectedCard(1);
+  }, []);
   return (
     <div className="rewards">
       <div className="banner">
@@ -82,34 +85,51 @@ function Rewards() {
                 <button
                   onClick={() => handleButtonClick(1)}
                   style={{
-                    borderBottom: selectedCard == 1 ? "4px solid #00754a" : "none",
+                    borderBottom:
+                      selectedCard == 1 ? "4px solid #00754a" : "none",
                   }}
                 >
                   <span>25</span> <span style={{ color: "#cba258" }}>★</span>
                 </button>
-                <button  style={{
-                    borderBottom: selectedCard == 2 ? "4px solid #00754a" : "none",
-                  }} onClick={() => handleButtonClick(2)}>
+                <button
+                  style={{
+                    borderBottom:
+                      selectedCard == 2 ? "4px solid #00754a" : "none",
+                  }}
+                  onClick={() => handleButtonClick(2)}
+                >
                   <span>100</span>
                   <span style={{ color: "#cba258" }}>★</span>
                 </button>
-                <button  style={{
-                    borderBottom: selectedCard == 3 ? "4px solid #00754a" : "none",
-                  }} onClick={() => handleButtonClick(3)}>
+                <button
+                  style={{
+                    borderBottom:
+                      selectedCard == 3 ? "4px solid #00754a" : "none",
+                  }}
+                  onClick={() => handleButtonClick(3)}
+                >
                   <span>200</span>
                   <span style={{ color: "#cba258" }}>★</span>
                   <div></div>
                 </button>
-                <button  style={{
-                    borderBottom: selectedCard == 4 ? "4px solid #00754a" : "none",
-                  }} onClick={() => handleButtonClick(4)}>
+                <button
+                  style={{
+                    borderBottom:
+                      selectedCard == 4 ? "4px solid #00754a" : "none",
+                  }}
+                  onClick={() => handleButtonClick(4)}
+                >
                   <span>300</span>
                   <span style={{ color: "#cba258" }}>★</span>
                   <div></div>
                 </button>
-                <button  style={{
-                    borderBottom: selectedCard == 5 ? "4px solid #00754a" : "none",
-                  }} onClick={() => handleButtonClick(5)}>
+                <button
+                  style={{
+                    borderBottom:
+                      selectedCard == 5 ? "4px solid #00754a" : "none",
+                  }}
+                  onClick={() => handleButtonClick(5)}
+                >
                   <span>400</span>
                   <span style={{ color: "#cba258" }}>★</span>
                   <div></div>
@@ -118,7 +138,7 @@ function Rewards() {
             </div>
             <div className="bottom">
               <div
-                className='card'
+                className="card"
                 style={{ display: selectedCard == 1 ? "flex" : "none" }}
               >
                 <img src={foto25} alt="" />
@@ -132,7 +152,7 @@ function Rewards() {
               </div>
               <div
                 className="card"
-                style={{ display: selectedCard==2 ? "flex" : "none" }}
+                style={{ display: selectedCard == 2 ? "flex" : "none" }}
               >
                 <img src={foto100} alt="" />
                 <div className="text">
@@ -148,7 +168,7 @@ function Rewards() {
               </div>
               <div
                 className="card"
-                style={{ display: selectedCard==3 ? "flex" : "none" }}
+                style={{ display: selectedCard == 3 ? "flex" : "none" }}
               >
                 <img src={foto200} alt="" />
                 <div className="text">
@@ -164,7 +184,7 @@ function Rewards() {
               </div>
               <div
                 className="card"
-                style={{ display: selectedCard==4 ? "flex" : "none" }}
+                style={{ display: selectedCard == 4 ? "flex" : "none" }}
               >
                 <img src={foto300} alt="" />
                 <div className="text">
@@ -177,7 +197,7 @@ function Rewards() {
               </div>
               <div
                 className="card"
-                style={{ display: selectedCard==5 ? "flex" : "none" }}
+                style={{ display: selectedCard == 5 ? "flex" : "none" }}
               >
                 <img src={foto400} alt="" />
                 <div className="text">
@@ -289,6 +309,47 @@ function Rewards() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="rewards">
+            <div className="inrewards">
+            <div className="left-star">
+              </div>
+              <div className="boxs">
+              <div className="top">
+                <h1>Keep the Rewards Coming</h1>
+                <p>
+                  The Rewards don't stop at your morning coffee. Join Starbucks®
+                  Rewards and unlock perks from our partners, all while earning
+                  more Stars.
+                </p>
+              </div>
+              <div className="bottom">
+                <div className="box">
+                  <img src={skymiles} alt="" />
+                  <p>
+                    <Link>Link your Delta SkyMiles®</Link> and Starbucks®
+                    Rewards accounts to earn 1 mile per $1 spent at Starbucks
+                    and double Stars on Delta travel days.<sup>1</sup>
+                  </p>
+                </div>
+                <div className="box">
+                  <img src={america} alt="" />
+                  <p>
+                    <Link>Link your Bank of America</Link> eligible card and
+                    Starbucks® Rewards account to earn 2% Cash Back and Bonus
+                    Stars on qualifying Starbucks in-app purchases.<sup>2</sup>
+                  </p>
+                 
+                </div>
+                
+              </div>
+              
+              <div className="link">
+                <Link>Join Starbucks® Rewards</Link>
+              </div>
+              </div>
+              <div className="right-star"></div>  
             </div>
           </div>
         </div>

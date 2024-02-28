@@ -1,0 +1,23 @@
+.menu-header{
+    nav{
+         
+        .banner{
+            padding: 0 40px 0 100px;
+       ul{
+        display: flex;
+        li{
+            margin-left: 32px;
+            padding: 16px 0;
+            a{
+color: black;
+font-size: 14px;
+padding-bottom: 4px;
+            }
+            .active{
+                border-bottom: 1px solid #00754a;
+            }
+        }
+       }
+        }
+    }
+}

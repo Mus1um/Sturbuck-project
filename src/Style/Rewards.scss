@@ -56,6 +56,13 @@
     }
     .section-center {
       margin: 32px 0;
+      a {
+        color: #00754a;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
       .getting {
         padding: 40px;
         text-align: center;
@@ -241,8 +248,95 @@
           }
         }
       }
+.rewards{
+  background-image: url('../Images/background-green.webp');
+  background-size: cover;
+  padding: 30px;
+  .inrewards{
+    background-color: #d4e9e2;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+   .boxs{
+   
+    .top{
+     padding-bottom: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+h1{
+font-weight: 600;
+font-size: 2.0rem;
+line-height: 1.385;
+}
+p{
+padding-top: 1.6rem;
+width: 820px;
+font-weight: 400;
+
+}
+    }
+    .bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box{
+        text-align: center;
+        width: 430px;
+        img{
+          height: auto;
+          width: 190px;
+        }
+        p{
+          padding: 1.6rem;
+          text-align: center;
+font-weight: 400;
+letter-spacing: -0.01em;
+        }
+      }
+    }
+    .link{
+      padding-top: 1.6rem;
+      text-align: center;
+      a{
+        background-color: hsl(158 100% 23%);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        display: inline-block;
+        padding: 7px 16px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+   }
+   .left-star{
+    background-image: url('../Images/stars1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 144px;
+  }
+  .right-star{
+    background-image: url('../Images/stars2.svg');
+    background-repeat: no-repeat;
+padding: 220px 144px;
+background-size: cover;
+  }
+  
+  }
+}
     }
     .section-bottom {
+      a {
+        color: #00754a;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
       .text-center {
         display: grid;
         justify-content: center;
@@ -256,13 +350,7 @@
         p {
           width: 670px;
           font-weight: 400;
-          a {
-            color: #00754a;
-            text-decoration: underline;
-            &:hover {
-              text-decoration: none;
-            }
-          }
+        
         }
       }
       .text-bottom {
@@ -281,13 +369,7 @@
               padding-right: 70px;
               font-weight: 400;
               padding-top: 8px;
-              a {
-                color: #00754a;
-                text-decoration: underline;
-                &:hover {
-                  text-decoration: none;
-                }
-              }
+            
             }
           }
           .texts {
@@ -304,13 +386,7 @@
                 p {
                   font-size: 14px;
                   padding-top: 20px;
-                  a {
-                    color: #00754a;
-                    text-decoration: underline;
-                    &:hover {
-                      text-decoration: none;
-                    }
-                  }
+                 
                 }
               }
             }

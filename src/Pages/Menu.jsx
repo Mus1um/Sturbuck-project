@@ -1,9 +1,13 @@
 import React from 'react'
+import '../Style/Menu.css'
+import Menubanner from '../Components/Menubanner'
+
+
 
 function Menu() {
   return (
-    <div>
-      menu
+    <div className='menu'>
+      <Menubanner/>
     </div>
   )
 }

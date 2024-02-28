@@ -52,6 +52,13 @@
 .rewards section .section-center {
   margin: 32px 0;
 }
+.rewards section .section-center a {
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-center a:hover {
+  text-decoration: none;
+}
 .rewards section .section-center .getting {
   padding: 40px;
   text-align: center;
@@ -232,6 +239,88 @@
 .rewards section .section-center .cash-card .bottom .dollar:nth-child(1) {
   margin-bottom: 62px;
 }
+.rewards section .section-center .rewards {
+  background-image: url("../Images/background-green.webp");
+  background-size: cover;
+  padding: 30px;
+}
+.rewards section .section-center .rewards .inrewards {
+  background-color: #d4e9e2;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+.rewards section .section-center .rewards .inrewards .boxs .top {
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.rewards section .section-center .rewards .inrewards .boxs .top h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.385;
+}
+.rewards section .section-center .rewards .inrewards .boxs .top p {
+  padding-top: 1.6rem;
+  width: 820px;
+  font-weight: 400;
+}
+.rewards section .section-center .rewards .inrewards .boxs .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rewards section .section-center .rewards .inrewards .boxs .bottom .box {
+  text-align: center;
+  width: 430px;
+}
+.rewards section .section-center .rewards .inrewards .boxs .bottom .box img {
+  height: auto;
+  width: 190px;
+}
+.rewards section .section-center .rewards .inrewards .boxs .bottom .box p {
+  padding: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.rewards section .section-center .rewards .inrewards .boxs .link {
+  padding-top: 1.6rem;
+  text-align: center;
+}
+.rewards section .section-center .rewards .inrewards .boxs .link a {
+  background-color: hsl(158, 100%, 23%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 7px 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+}
+.rewards section .section-center .rewards .inrewards .left-star {
+  background-image: url("../Images/stars1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 144px;
+}
+.rewards section .section-center .rewards .inrewards .right-star {
+  background-image: url("../Images/stars2.svg");
+  background-repeat: no-repeat;
+  padding: 220px 144px;
+  background-size: cover;
+}
+.rewards section .section-bottom a {
+  color: #00754a;
+  text-decoration: underline;
+}
+.rewards section .section-bottom a:hover {
+  text-decoration: none;
+}
 .rewards section .section-bottom .text-center {
   display: grid;
   justify-content: center;
@@ -246,13 +335,6 @@
 .rewards section .section-bottom .text-center p {
   width: 670px;
   font-weight: 400;
-}
-.rewards section .section-bottom .text-center p a {
-  color: #00754a;
-  text-decoration: underline;
-}
-.rewards section .section-bottom .text-center p a:hover {
-  text-decoration: none;
 }
 .rewards section .section-bottom .text-bottom {
   padding: 100px;
@@ -272,13 +354,6 @@
   font-weight: 400;
   padding-top: 8px;
 }
-.rewards section .section-bottom .text-bottom .alltexts .text-top p a {
-  color: #00754a;
-  text-decoration: underline;
-}
-.rewards section .section-bottom .text-bottom .alltexts .text-top p a:hover {
-  text-decoration: none;
-}
 .rewards section .section-bottom .text-bottom .alltexts .texts {
   display: flex;
 }
@@ -294,13 +369,6 @@
 .rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p {
   font-size: 14px;
   padding-top: 20px;
-}
-.rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p a {
-  color: #00754a;
-  text-decoration: underline;
-}
-.rewards section .section-bottom .text-bottom .alltexts .texts .box .paragrafs p a:hover {
-  text-decoration: none;
 }
 .rewards section .section-bottom .text-bottom .alltexts .texts .texts-left {
   padding-right: 40px;
