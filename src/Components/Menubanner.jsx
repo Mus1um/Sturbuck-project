@@ -9,10 +9,10 @@ function Menubanner() {
         <div className="banner">
         <ul>
           <li>
-            <NavLink to='/menu' >Menu</NavLink>
+            <NavLink to='/menu'>Menu</NavLink>
           </li>
           <li>
-            <NavLink to='featured'>Featured</NavLink>
+            <NavLink to='/featured'>Featured</NavLink>
           </li>
           <li>
             <NavLink to='previous'>Previous</NavLink>

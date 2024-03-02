@@ -13,9 +13,8 @@ import foto100 from "../Images/100.webp";
 import foto200 from "../Images/200.webp";
 import foto300 from "../Images/300.webp";
 import foto400 from "../Images/400.webp";
-import america from '../Images/bank-of-america.webp'
-import skymiles from '../Images/delta-skymiles.webp'
-
+import america from "../Images/bank-of-america.webp";
+import skymiles from "../Images/delta-skymiles.webp";
 
 function Rewards() {
   const [selectedCard, setSelectedCard] = useState(false);
@@ -39,7 +38,7 @@ function Rewards() {
             <div className="text">
               <h1>FREE COFFEE IS A TAP AWAY</h1>
               <p>Join now to start earning Rewards.</p>
-              <a href="">Join now</a>
+              <Link>Join now</Link>
               <p>Or join in the app for the best experience</p>
             </div>
           </div>
@@ -313,43 +312,40 @@ function Rewards() {
           </div>
           <div className="rewards">
             <div className="inrewards">
-            <div className="left-star">
-              </div>
+              <div className="left-star"></div>
               <div className="boxs">
-              <div className="top">
-                <h1>Keep the Rewards Coming</h1>
-                <p>
-                  The Rewards don't stop at your morning coffee. Join Starbucks®
-                  Rewards and unlock perks from our partners, all while earning
-                  more Stars.
-                </p>
-              </div>
-              <div className="bottom">
-                <div className="box">
-                  <img src={skymiles} alt="" />
+                <div className="top">
+                  <h1>Keep the Rewards Coming</h1>
                   <p>
-                    <Link>Link your Delta SkyMiles®</Link> and Starbucks®
-                    Rewards accounts to earn 1 mile per $1 spent at Starbucks
-                    and double Stars on Delta travel days.<sup>1</sup>
+                    The Rewards don't stop at your morning coffee. Join
+                    Starbucks® Rewards and unlock perks from our partners, all
+                    while earning more Stars.
                   </p>
                 </div>
-                <div className="box">
-                  <img src={america} alt="" />
-                  <p>
-                    <Link>Link your Bank of America</Link> eligible card and
-                    Starbucks® Rewards account to earn 2% Cash Back and Bonus
-                    Stars on qualifying Starbucks in-app purchases.<sup>2</sup>
-                  </p>
-                 
+                <div className="bottom">
+                  <div className="box">
+                    <img src={skymiles} alt="" />
+                    <p>
+                      <Link>Link your Delta SkyMiles®</Link> and Starbucks®
+                      Rewards accounts to earn 1 mile per $1 spent at Starbucks
+                      and double Stars on Delta travel days.<sup>1</sup>
+                    </p>
+                  </div>
+                  <div className="box">
+                    <img src={america} alt="" />
+                    <p>
+                      <Link>Link your Bank of America</Link> eligible card and
+                      Starbucks® Rewards account to earn 2% Cash Back and Bonus
+                      Stars on qualifying Starbucks in-app purchases.
+                      <sup>2</sup>
+                    </p>
+                  </div>
                 </div>
-                
+                <div className="link">
+                  <Link>Join Starbucks® Rewards</Link>
+                </div>
               </div>
-              
-              <div className="link">
-                <Link>Join Starbucks® Rewards</Link>
-              </div>
-              </div>
-              <div className="right-star"></div>  
+              <div className="right-star"></div>
             </div>
           </div>
         </div>
