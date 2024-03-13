@@ -30,10 +30,10 @@ function Footer() {
           <ul>
             <h2>About Us</h2>
             <li>
-              <Link>Our Company</Link>
+              <Link to="/about-us/">Our Company</Link>
             </li>
             <li>
-              <Link>Our Coffee</Link>
+              <Link to="/coffee/">Our Coffee</Link>
             </li>
             <li>
               <Link>Stories and News</Link>
