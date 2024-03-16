@@ -45,7 +45,7 @@ function Footer() {
               <Link>Investor Relations</Link>
             </li>
             <li>
-              <Link>Customer Service</Link>
+              <Link to="/sbux">Customer Service</Link>
             </li>
             <li>
               <Link>Contact Us</Link>
@@ -75,10 +75,10 @@ function Footer() {
           <ul className="margin-ul">
             <h2>Social Impact</h2>
             <li>
-              <Link>People</Link>
+              <Link to="/responsibility/people/">People</Link>
             </li>
             <li>
-              <Link>Planet</Link>
+              <Link to="/responsibility/planet/">Planet</Link>
             </li>
             <li>
               <Link>Environmental and Social Impact Reporting</Link>
