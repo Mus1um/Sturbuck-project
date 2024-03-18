@@ -9,7 +9,7 @@ import Previous from './Pages/Previous.jsx'
 import Favorites from './Pages/Favorites.jsx'
 import Menu2 from './Pages/Menu2.jsx'
 import OurCompany from "./Pages/OurCompany.jsx";
-import OurCoffee from "./Pages/OurCoffee.jsx";
+import Coffee from "./Pages/Coffee.jsx";
 import People from "./Pages/People.jsx";
 import Planet from "./Pages/Planet.jsx";
 import Services from "./Pages/Services.jsx";
@@ -29,7 +29,7 @@ function App() {
         <Route path="/rewards" element={<Rewards/>}/>
         <Route path="/gift" element={<Card/>}/>
         <Route path="/about-us/" element={<OurCompany/>}/>
-        <Route path="/coffee/" element={<OurCoffee/>} />
+        <Route path="/coffee/" element={<Coffee/>} />
         <Route path="/responsibility/people/" element={<People/>}/>
         <Route path="/responsibility/planet/" element={<Planet/>}/>
         <Route path="/sbux" element={<Services/>}/>

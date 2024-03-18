@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import foto1 from "../Images/137-78073.webp";
 import foto2 from "../Images/137-71809.webp";
 import foto3 from "../Images/137-71810.webp";
-import '../Style/OurCoffee.css'
+import '../Style/Coffee.css'
 
-function OurCoffee() {
+function Coffee() {
   return (
-    <div className="section">
-        <div className="container">
-              <div className="boxes">
+    <div className="section-coffe">
+                  <div className="boxes">
         <div className="box">
           <h1>Let's talk coffee</h1>
           <p>
@@ -65,10 +64,9 @@ function OurCoffee() {
           </p>
         </div>
       </div>
-        </div>
     
     </div>
   );
 }
 
-export default OurCoffee;
+export default Coffee;
