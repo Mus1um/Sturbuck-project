@@ -1,0 +1,17 @@
+.drinks {
+  width: 70%;
+}
+.drinks strong {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.385;
+  padding-bottom: 40px;
+}
+.drinks .main h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+  padding-left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}/*# sourceMappingURL=Drinks.css.map */

@@ -1,0 +1,13 @@
+.category {
+  width: 17%;
+}
+.category h1 {
+  font-weight: 600;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+.category ul li {
+  color: #6b6b6b;
+  padding-bottom: 12px;
+  font-size: 16px;
+}/*# sourceMappingURL=Category.css.map */

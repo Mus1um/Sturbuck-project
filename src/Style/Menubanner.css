@@ -1,3 +1,6 @@
+.menu-header {
+  border-bottom: 1px solid #dbd9d7;
+}
 .menu-header nav .banner {
   padding: 0 40px 0 100px;
 }
@@ -15,4 +18,8 @@
 }
 .menu-header nav .banner ul li .active {
   border-bottom: 1px solid #00754a;
+}
+
+.bannerHidden {
+  display: none;
 }/*# sourceMappingURL=Menubanner.css.map */

@@ -7,9 +7,10 @@ import { IoBagOutline } from "react-icons/io5";
 function BottomDrawer() {
     const [selected,setSelected]=useState(false)
     const handleselected=()=>{
-        setTimeout(()=>{
+     
    setSelected(!selected)
-        },200)
+    
+        document.body.style.overflow = selected ? "visible" : "hidden";
      
     }
   return (
