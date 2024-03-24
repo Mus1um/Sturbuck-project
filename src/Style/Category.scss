@@ -1,15 +1,18 @@
 .category{
     width: 17%;
     h1{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 19px;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
     }
     ul{
         li{
+            cursor: pointer;
             color: #6b6b6b;
-            padding-bottom: 12px;
+            padding-bottom: 25px;
             font-size: 16px;
+            width: 150px;
+            letter-spacing: 0.5px;
         }
     }
 }

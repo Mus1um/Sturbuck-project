@@ -1,8 +1,43 @@
 {
   "category":[
-  "Oleato™","Hot Coffe","Hot Teas","Hot Drinks",
-  "Frappuccino® Blended Beverages",
-  "Cold Coffees","Iced Teas","Cold Drinks"
+    {
+    "id":1,
+    "name":"Oleato™"
+    },
+    {
+    "id":2,
+    "name":"Hot Coffe"
+    },
+    {
+    "id":3,
+    "name":"Hot Teas"
+    },
+    {
+    "id":4,
+    "name":"Hot Drinks"
+    },
+    {
+    "id":5,
+    "name":"Frappuccino® Blended Beverages"
+    },
+    {
+      "id":6,
+      "name":
+      "Cold Coffees"
+      },
+      {
+        "id":7,
+        "name":
+        "Iced Teas"
+        },            
+        {
+          "id":8,
+          "name":
+          "Cold Drinks"
+          }   
+ 
+
+  
 ],
 
   

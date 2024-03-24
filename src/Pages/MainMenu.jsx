@@ -26,8 +26,8 @@ function MainMenu() {
   }, []);
   return (
     <div className="menu-main">
-      <Category DrinksCategory={categoryData} />
-      <Drinks />
+      <Category categoryData={categoryData} />
+      <Drinks data={data} />
     </div>
   );
 }

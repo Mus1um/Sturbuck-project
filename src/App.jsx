@@ -14,6 +14,7 @@ import Planet from "./Pages/Planet.jsx";
 import Services from "./Pages/Services.jsx";
 import Featured from "./Pages/Featured.jsx";
 import MainMenu from "./Pages/MainMenu.jsx";
+import MainDrinks from "./Components/MainDrinks.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />}>
           <Route index element={<MainMenu />} />
+          <Route path=":id" element={<MainDrinks/>} />
           <Route path="previous" element={<Previous />} />
           <Route path="favorites" element={<Favorites />} />
           <Route path="featured" element={<Featured />} />
