@@ -2,7 +2,7 @@ import React from 'react'
 import '../Style/Menu.css'
 import Menubanner from '../Components/Menubanner'
 import BattomDrawer from '../Components/BottomDrawer'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 
 

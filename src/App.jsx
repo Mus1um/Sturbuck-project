@@ -23,12 +23,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />}>
-          <Route index element={<MainMenu />} />
-          <Route path=":id" element={<MainDrinks/>} />
+          <Route path="" element={<MainMenu />}>
+            <Route path="drinks/:id" element={<MainDrinks />} />
+          </Route>
+
           <Route path="previous" element={<Previous />} />
           <Route path="favorites" element={<Favorites />} />
           <Route path="featured" element={<Featured />} />
         </Route>
+
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/gift" element={<Card />} />
         <Route path="/about-us/" element={<OurCompany />} />

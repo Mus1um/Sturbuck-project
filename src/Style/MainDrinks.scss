@@ -1,0 +1,25 @@
+.main-drinks{
+    .top-location{
+
+    }
+    .drink-cards{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        gap: 50px;
+        .drink-card {
+            cursor: pointer;    
+          img {
+            width: 170px;
+            border-radius: 100%;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 20px;
+            width: 200px;
+            text-align: center;
+          }
+        }
+    }
+}
+
+

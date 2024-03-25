@@ -1,18 +1,18 @@
-import { useState } from "react";
 import "../Style/Category.css";
+import { Link } from "react-router-dom";
 
 function Category(props) {
-  const [clicked,setClikced]=useState(false)
-  const handleClick=(name)=>{
-    console.log(name);
-  }
   const data = props.categoryData;
   return (
     <div className="category">
       <h1>Drinks</h1>
-      <ul >
+      <ul>
         {data.map((item) => {
-          return <li onClick={()=>handleClick(item.name)} key={item.id}>{item.name}</li>;
+          return (
+            <li key={item.id}>
+              <Link to={`/menu/drinks/${item.name}`}>{item.name}</Link>
+            </li>
+          );
         })}
       </ul>
     </div>
