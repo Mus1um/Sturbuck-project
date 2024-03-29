@@ -15,6 +15,7 @@ import Services from "./Pages/Services.jsx";
 import Featured from "./Pages/Featured.jsx";
 import MainMenu from "./Pages/MainMenu.jsx";
 import MainDrinks from "./Components/MainDrinks.jsx";
+import Product from "./Pages/Product.jsx";
 
 function App() {
   return (
@@ -26,12 +27,11 @@ function App() {
           <Route path="" element={<MainMenu />}>
             <Route path="drinks/:id" element={<MainDrinks />} />
           </Route>
-
+          <Route path="product/:id" element={<Product/>}/>  
           <Route path="previous" element={<Previous />} />
           <Route path="favorites" element={<Favorites />} />
           <Route path="featured" element={<Featured />} />
         </Route>
-
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/gift" element={<Card />} />
         <Route path="/about-us/" element={<OurCompany />} />

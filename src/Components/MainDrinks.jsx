@@ -22,7 +22,7 @@ function MainDrinks() {
       <div className="drink-cards">
       {filterCategory?.map((item) => {
         return (
-          <Link key={item.id}>
+          <Link key={item.id} to={`/menu/product/${item.id}`}>
           <div className="drink-card" >
             <img src={item.img} alt="" />
             <p>{item.name}</p>
