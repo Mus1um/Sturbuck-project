@@ -44,7 +44,8 @@
   color: white;
 }
 .bottomdrawer .drawer {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
   z-index: 999;
@@ -52,7 +53,7 @@
   background-color: #1e3932;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
+  padding: 20px 40px;
 }
 .bottomdrawer .drawer .left {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7019607843);
@@ -79,6 +80,9 @@
   color: white;
   font-size: 12px;
 }
+.bottomdrawer .drawer .right {
+  position: relative;
+}
 .bottomdrawer .drawer .right button {
   background-color: transparent;
   border: none;
@@ -86,6 +90,26 @@
 }
 .bottomdrawer .drawer .right button .bag {
   color: rgba(255, 255, 255, 0.7019607843);
-  width: 32px;
+  width: 40px;
   height: 32px;
+  transition: color 300ms;
+}
+.bottomdrawer .drawer .right h3 {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  color: white;
+}
+.bottomdrawer .btn-add {
+  background-color: #00754a;
+  color: white;
+  padding: 18px 24px;
+  border-radius: 50px;
+  border: none;
+  font-size: 19px;
+  text-align: center;
+  box-shadow: 0 0 5px gray;
+  position: fixed;
+  bottom: 150px;
+  right: 40px;
 }/*# sourceMappingURL=BottomDrawer.css.map */

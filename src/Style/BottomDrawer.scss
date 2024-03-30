@@ -45,7 +45,8 @@
     }
   }
   .drawer {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     left: 0;
     z-index: 999;
@@ -53,7 +54,7 @@
     background-color: #1e3932;
     justify-content: space-around;
     align-items: center;
-    padding: 40px;
+    padding: 20px 40px;
 
     .left {
       border-bottom: 1px solid #ffffffb3;
@@ -82,16 +83,38 @@
       }
     }
     .right {
+      position: relative;
       button {
         background-color: transparent;
         border: none;
         cursor: pointer;
         .bag {
           color: #ffffffb3;
-          width: 32px;
+          width: 40px;
           height: 32px;
+          transition: color 300ms;
         }
       }
+      h3{
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        color: white;
+      }
     }
+  }
+  .btn-add{
+    background-color: #00754a;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 19px;
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+    position: fixed;
+    bottom: 150px;
+    right: 40px;
+    
   }
 }
