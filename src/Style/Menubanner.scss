@@ -6,8 +6,8 @@
       ul {
         display: flex;
         li {
-          margin-left: 32px;
-          padding: 16px 0;
+          margin-right: 5px;
+          padding: 16px 0px;
           a {
             color: black;
             font-size: 14px;
@@ -17,6 +17,13 @@
             border-bottom: 1px solid #00754a;
           }
         }
+      }
+    }
+  }
+  @media(max-width: 575px){
+    nav{
+      .banner{
+        padding: 0 ;
       }
     }
   }

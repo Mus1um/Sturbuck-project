@@ -14,6 +14,27 @@
   letter-spacing: 0.1em;
   padding: 15px 140px;
 }
+.rewards .banner .banner-link {
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  display: none;
+}
+@media (max-width: 767px) {
+  .rewards .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .rewards .banner h1 {
+    padding: 15px 0px;
+  }
+  .rewards .banner .banner-link {
+    display: inline-block;
+  }
+}
 .rewards section {
   padding: 0;
 }
@@ -27,12 +48,25 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 575px) {
+  .rewards section .section-top {
+    background-image: url("../Images/hero-mobile_2021.webp");
+    height: 80vh;
+    display: block;
+  }
+}
 .rewards section .section-top .left {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 575px) {
+  .rewards section .section-top .left {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .rewards section .section-top .left .text h1 {
   font-size: 2.6rem;
@@ -51,6 +85,15 @@
   font-weight: 400;
   padding: 18px 0px;
   font-size: 20px;
+}
+@media (max-width: 575px) {
+  .rewards section .section-top .left .text {
+    text-align: center;
+  }
+  .rewards section .section-top .left .text h1 {
+    font-size: 2.8rem;
+    width: 100%;
+  }
 }
 .rewards section .section-center {
   margin: 32px 0;
@@ -126,6 +169,43 @@
 .rewards section .section-center .getting .process .box .modal:hover {
   text-decoration: none;
 }
+@media (max-width: 575px) {
+  .rewards section .section-center .getting {
+    padding: 0px;
+  }
+  .rewards section .section-center .getting .top h2 {
+    font-size: 24px;
+  }
+  .rewards section .section-center .getting .top p {
+    font-size: 14px;
+  }
+  .rewards section .section-center .getting .top-two p {
+    width: 100%;
+  }
+  .rewards section .section-center .getting .process {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .rewards section .section-center .getting .process .box {
+    margin-left: 0;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .rewards section .section-center .getting .process .box img {
+    margin-right: 10px;
+  }
+  .rewards section .section-center .getting .process .box h1 {
+    margin-right: 20px;
+  }
+  .rewards section .section-center .getting .process .box h3 {
+    text-align: start;
+  }
+  .rewards section .section-center .getting .process .box p {
+    text-align: start;
+    font-size: 14px;
+    width: 90%;
+  }
+}
 .rewards section .section-center .favorites {
   padding: 108px 0;
 }
@@ -144,8 +224,6 @@
 .rewards section .section-center .favorites .top .stars {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 42px;
-       column-gap: 42px;
   transition: width 2s;
 }
 .rewards section .section-center .favorites .top .stars button {
@@ -153,6 +231,7 @@
   background-color: transparent;
   padding-bottom: 20px;
   transition: width 300ms;
+  margin-right: 42px;
 }
 .rewards section .section-center .favorites .top .stars button span:nth-child(1) {
   font-size: 1.6rem;
@@ -183,6 +262,18 @@
 .rewards section .section-center .favorites .bottom .card .text p {
   font-weight: 400;
   letter-spacing: -0.01em;
+}
+@media (max-width: 575px) {
+  .rewards section .section-center .favorites .top .stars button {
+    margin-right: 22px;
+  }
+  .rewards section .section-center .favorites .bottom .card {
+    flex-direction: column;
+    padding: 32px 0;
+  }
+  .rewards section .section-center .favorites .bottom .card .text {
+    text-align: center;
+  }
 }
 .rewards section .section-center .cash-card {
   background-color: #f2f0eb;
@@ -241,6 +332,24 @@
 }
 .rewards section .section-center .cash-card .bottom .dollar:nth-child(1) {
   margin-bottom: 62px;
+}
+@media (max-width: 575px) {
+  .rewards section .section-center .cash-card {
+    padding: 62px 10px;
+  }
+  .rewards section .section-center .cash-card .top p {
+    width: 100%;
+  }
+  .rewards section .section-center .cash-card .bottom .dollar {
+    flex-direction: column;
+  }
+  .rewards section .section-center .cash-card .bottom .dollar .cart {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .rewards section .section-center .cash-card .bottom .dollar .cart .cart-right p {
+    width: 100%;
+  }
 }
 .rewards section .section-center .rewards {
   background-image: url("../Images/background-green.webp");
@@ -317,6 +426,44 @@
   padding: 220px 144px;
   background-size: cover;
 }
+@media (max-width: 575px) {
+  .rewards section .section-center .rewards {
+    background-image: none;
+    padding: 0;
+  }
+  .rewards section .section-center .rewards .inrewards {
+    padding: 0;
+    flex-direction: column;
+  }
+  .rewards section .section-center .rewards .inrewards .boxs .top p {
+    width: 100%;
+  }
+  .rewards section .section-center .rewards .inrewards .boxs .bottom {
+    flex-direction: column;
+  }
+  .rewards section .section-center .rewards .inrewards .boxs .bottom .box {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  .rewards section .section-center .rewards .inrewards .boxs .bottom .box img {
+    width: 112px;
+    height: 49px;
+  }
+  .rewards section .section-center .rewards .inrewards .left-star {
+    background-image: url("../Images/starsresponse1.svg");
+    background-size: cover;
+    padding: 10% 10% 5%;
+    width: 20%;
+  }
+  .rewards section .section-center .rewards .inrewards .right-star {
+    background-image: url("../Images/starsresponse2.svg");
+    background-size: cover;
+    padding: 10% 10% 5%;
+    width: 20%;
+    align-self: flex-end;
+  }
+}
 .rewards section .section-bottom a {
   color: #00754a;
   text-decoration: underline;
@@ -338,6 +485,14 @@
 .rewards section .section-bottom .text-center p {
   width: 670px;
   font-weight: 400;
+}
+@media (max-width: 575px) {
+  .rewards section .section-bottom .text-center {
+    padding: 100px 20px;
+  }
+  .rewards section .section-bottom .text-center p {
+    width: 100%;
+  }
 }
 .rewards section .section-bottom .text-bottom {
   padding: 100px;
@@ -375,4 +530,15 @@
 }
 .rewards section .section-bottom .text-bottom .alltexts .texts .texts-left {
   padding-right: 40px;
+}
+@media (max-width: 575px) {
+  .rewards section .section-bottom .text-bottom {
+    padding: 10px;
+  }
+  .rewards section .section-bottom .text-bottom .alltexts .texts {
+    flex-direction: column;
+  }
+  .rewards section .section-bottom .text-bottom .alltexts .texts .box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Rewards.css.map */

@@ -1,4 +1,7 @@
 .menu-main{
     display: flex;
     padding: 40px 130px;
+    @media(max-width: 575px){
+        padding: 20px;
+    }
 }

@@ -8,8 +8,8 @@
   display: flex;
 }
 .menu-header nav .banner ul li {
-  margin-left: 32px;
-  padding: 16px 0;
+  margin-right: 5px;
+  padding: 16px 0px;
 }
 .menu-header nav .banner ul li a {
   color: black;
@@ -18,6 +18,11 @@
 }
 .menu-header nav .banner ul li .active {
   border-bottom: 1px solid #00754a;
+}
+@media (max-width: 575px) {
+  .menu-header nav .banner {
+    padding: 0;
+  }
 }
 
 .bannerHidden {

@@ -1,4 +1,9 @@
 .menu-main {
   display: flex;
   padding: 40px 130px;
+}
+@media (max-width: 575px) {
+  .menu-main {
+    padding: 20px;
+  }
 }/*# sourceMappingURL=MainMenu.css.map */

@@ -37,4 +37,15 @@
 }
 .drinks .main .menu-coffes a .cardss p {
   font-size: 19px;
+}
+@media (max-width: 575px) {
+  .drinks {
+    width: 100%;
+  }
+  .drinks strong {
+    padding-bottom: 0;
+  }
+  .drinks .main .menu-coffes {
+    grid-template-columns: auto;
+  }
 }/*# sourceMappingURL=Drinks.css.map */

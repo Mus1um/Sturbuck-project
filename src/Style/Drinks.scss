@@ -39,4 +39,16 @@
       }
     }
   }
+  @media(max-width: 575px){
+    width: 100%;
+    strong{
+      padding-bottom: 0;
+      
+    }
+    .main{
+      .menu-coffes{
+        grid-template-columns: auto;
+      }
+    }
+  }
 }

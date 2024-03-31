@@ -31,6 +31,7 @@ function Rewards() {
     <div className="rewards">
       <div className="banner">
         <h1>STARBUCKS® REWARDS</h1>
+        <Link className="banner-link">Join in the app</Link>
       </div>
       <section>
         <div className="section-top">
@@ -51,29 +52,44 @@ function Rewards() {
             </div>
             <div className="process">
               <div className="box">
-                <h1>1</h1>
-                <h3>Create an account</h3>
-                <p>
-                  To get started, join now. You can also join in the app to get
-                  access to the full range of Starbucks® Rewards benefits.
-                </p>
+                <div className="box-number">
+                  <h1>1</h1>
+                </div>
+
+                <div className="box-text">
+                  <h3>Create an account</h3>
+                  <p>
+                    To get started, join now. You can also join in the app to
+                    get access to the full range of Starbucks® Rewards benefits.
+                  </p>
+                </div>
               </div>
               <div className="box">
-                <h1>2</h1>
-                <h3>Order and pay how you’d like</h3>
-                <p>
-                  Use cash, credit/debit card or save some time and pay right
-                  through the app. You’ll collect Stars all ways. Learn how
-                </p>
+                <div className="box-number">
+                  <h1>2</h1>
+                </div>
+
+                <div className="box-text">
+                  <h3>Order and pay how you’d like</h3>
+                  <p>
+                    Use cash, credit/debit card or save some time and pay right
+                    through the app. You’ll collect Stars all ways. Learn how
+                  </p>
+                </div>
               </div>
               <div className="box">
+                <div className="box-number">
                 <h1>3</h1>
-                <h3>Earn Stars, get Rewards</h3>
-                <p>
-                  As you earn Stars, you can redeem them for Rewards—like free
-                  food, drinks, and more. Start redeeming with as little as 25
-                  Stars!
-                </p>
+                </div>
+             
+                <div className="box-text">
+                  <h3>Earn Stars, get Rewards</h3>
+                  <p>
+                    As you earn Stars, you can redeem them for Rewards—like free
+                    food, drinks, and more. Start redeeming with as little as 25
+                    Stars!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -221,30 +237,39 @@ function Rewards() {
             <div className="process">
               <div className="box">
                 <img src={fotoone} alt="" />
+                <div className="box-text">
                 <h3>Fun freebies</h3>
                 <p>
                   Not only can you earn free coffee, look forward to a birthday
                   treat plus coffee and tea refills.
                 </p>
                 <p className="modal">Learn more</p>
+                </div>
+              
               </div>
               <div className="box">
                 <img src={fototwo} alt="" />
-                <h3>Order & pay ahead</h3>
+                <div className="box-text">
+                    <h3>Order & pay ahead</h3>
                 <p>
                   Enjoy the convenience of in-store, curbside or drive-thru
                   pickup at select stores.
                 </p>
                 <p className="modal">Learn more</p>
+                </div>
+              
               </div>
               <div className="box">
                 <img src={fotothree} alt="" />
+                <div className="box-text">
                 <h3>Get to free faster</h3>
                 <p>
                   Earn Stars even quicker with Bonus Star challenges, Double
                   Star Days and exciting games.
                 </p>
                 <p className="modal">Learn more</p>
+                </div>
+              
               </div>
             </div>
           </div>

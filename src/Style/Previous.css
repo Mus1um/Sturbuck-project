@@ -52,4 +52,9 @@
 }
 .section .card .links a:nth-child(2):hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 575px) {
+  .section .card {
+    margin: 40px 20px;
+  }
 }/*# sourceMappingURL=Previous.css.map */

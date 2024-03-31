@@ -15,4 +15,17 @@
   font-size: 20px;
   width: 200px;
   text-align: center;
+}
+@media (max-width: 575px) {
+  .main-drinks .drink-cards {
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 100%;
+  }
+  .main-drinks .drink-cards .drink-card {
+    align-items: center;
+  }
+  .main-drinks .drink-cards .drink-card p {
+    width: 180px;
+  }
 }/*# sourceMappingURL=MainDrinks.css.map */
