@@ -101,6 +101,7 @@
   color: white;
 }
 .bottomdrawer .btn-add {
+  transition: all 2s ease;
   background-color: #00754a;
   color: white;
   padding: 18px 24px;

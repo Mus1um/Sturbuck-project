@@ -26,9 +26,12 @@ function Services() {
 
             <div className="bottom-box">
               <p>Suggestions:</p>
+              <div className="services-buttons">
               <button>Missing stars</button>
               <button>Order was incomplete</button>
               <button>Apple Pay</button>
+              </div>
+              
             </div>
           </div>
           <div className="right">

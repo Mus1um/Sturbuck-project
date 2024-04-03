@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import "../Style/BottomDrawer.css";
 import { SlArrowDown } from "react-icons/sl";
 
@@ -9,6 +9,8 @@ function BottomDrawer() {
   const [selected, setSelected] = useState(false);
   const [btnClick, setBtnClick] = useState(false);
   const [clickCount, setClickCount] = useState(0);
+  const {pathname}=useLocation()
+  const {id} =useParams()
   const handleselected = () => {
     setSelected(!selected);
 
@@ -54,7 +56,7 @@ function BottomDrawer() {
           </button>
         </div>
       </div>
-      <button onClick={handleBtnClick} className="btn-add">
+      <button onClick={handleBtnClick} className="btn-add" style={{display:pathname===`/menu/product/${id}`? 'block':'none'}}>
         Add to Order
       </button>
     </div>

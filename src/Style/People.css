@@ -1,15 +1,20 @@
-.container .top-text {
+.top-text {
   text-align: center;
   padding: 40px 48px;
 }
-.container .top-text strong {
+@media (max-width: 575px) {
+  .top-text {
+    padding: 40px 0 !important;
+  }
+}
+.top-text strong {
   font-weight: 700;
   letter-spacing: 8px;
   font-size: 50px;
   line-height: 1.2;
   color: #1e3932;
 }
-.container .top-text p {
+.top-text p {
   color: #1e3932;
   padding: 2.4rem 0;
   font-size: 19px;
@@ -17,7 +22,7 @@
   text-align: center;
   font-weight: 500;
 }
-.container .top-text a {
+.top-text a {
   color: #1e3932;
   border-radius: 50px;
   padding: 7px 16px;
@@ -27,27 +32,28 @@
   text-align: center;
   transition: all 300ms;
 }
-.container .top-text a:hover {
+.top-text a:hover {
   background-color: hsla(164, 31%, 17%, 0.1);
 }
-.container .boxes {
+
+.boxes {
   padding: 40px 220px;
 }
-.container .boxes .revarse {
+.boxes .revarse {
   flex-direction: row-reverse;
 }
-.container .boxes .box {
+.boxes .box {
   display: flex;
   padding-bottom: 40px;
 }
-.container .boxes .box .image {
+.boxes .box .image {
   width: 50%;
 }
-.container .boxes .box .image img {
+.boxes .box .image img {
   height: 100%;
   width: 100%;
 }
-.container .boxes .box .text {
+.boxes .box .text {
   width: 50%;
   background-color: #d4e9e2;
   display: flex;
@@ -57,15 +63,15 @@
   padding-left: 60px;
   padding-right: 180px;
 }
-.container .boxes .box .text h1 {
+.boxes .box .text h1 {
   color: #1e3932;
   font-size: 24px;
   font-weight: 600;
 }
-.container .boxes .box .text .planet-text {
+.boxes .box .text .planet-text {
   font-size: 24px;
 }
-.container .boxes .box .text p {
+.boxes .box .text p {
   color: #1e3932;
   font-size: 20px;
   line-height: 1.75;
@@ -73,7 +79,7 @@
   letter-spacing: -0.01em;
   padding: 30px 0;
 }
-.container .boxes .box .text a {
+.boxes .box .text a {
   color: #1e3932;
   border-radius: 50px;
   padding: 7px 16px;
@@ -83,6 +89,22 @@
   text-align: center;
   transition: all 300ms;
 }
-.container .boxes .box .text a:hover {
+.boxes .box .text a:hover {
   background-color: hsla(164, 31%, 17%, 0.1);
+}
+@media (max-width: 575px) {
+  .boxes {
+    padding: 40px 0px;
+  }
+  .boxes .box {
+    display: block;
+    padding: 0;
+  }
+  .boxes .box .image {
+    width: 100%;
+  }
+  .boxes .box .text {
+    padding: 20px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=People.css.map */

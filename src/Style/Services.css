@@ -64,7 +64,10 @@
   font-size: 15px;
   line-height: 1.5;
 }
-.customer-services nav .banner .left .bottom-box button {
+.customer-services nav .banner .left .bottom-box .services-buttons {
+  display: flex;
+}
+.customer-services nav .banner .left .bottom-box .services-buttons button {
   cursor: pointer;
   margin-right: 1rem;
   border-radius: 50px;
@@ -137,6 +140,39 @@
 }
 .customer-services nav .banner .right .mySwiper .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+@media (max-width: 575px) {
+  .customer-services nav .banner {
+    padding: 10px;
+  }
+  .customer-services nav .banner .left {
+    width: 100%;
+  }
+  .customer-services nav .banner .left h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .customer-services nav .banner .left .bottom-box {
+    flex-direction: column;
+  }
+  .customer-services nav .banner .left .bottom-box .services-buttons button {
+    font-size: 12px;
+  }
+  .customer-services nav .banner .right {
+    position: static;
+  }
+  .customer-services nav .banner .right .mySwiper {
+    top: 290px;
+    left: 0px;
+    width: 100%;
+  }
+  .customer-services nav .banner .right .mySwiper .swiper-button-prev {
+    left: 160px;
+  }
+  .customer-services nav .banner .right .mySwiper .swiper-button-next {
+    right: 160px;
+  }
 }
 .customer-services section {
   padding: 48px 0;
@@ -254,6 +290,28 @@
   font-weight: 500;
   font-size: 14px;
 }
+@media (max-width: 575px) {
+  .customer-services section .page-center {
+    display: block;
+    padding: 20px;
+  }
+  .customer-services section .page-center .left-cards {
+    margin: 0;
+  }
+  .customer-services section .page-center .left-cards h1 {
+    justify-content: center;
+  }
+  .customer-services section .page-center .left-cards .cards {
+    padding: 40px 0;
+    grid-template-columns: auto auto;
+  }
+  .customer-services section .page-center .left-cards .cards .card .svg-content {
+    width: auto;
+  }
+  .customer-services section .page-center .join p {
+    width: 300px;
+  }
+}
 .customer-services section .page-bottom {
   margin-top: 148px;
   display: flex;
@@ -307,4 +365,46 @@
 }
 .customer-services section .page-bottom .right .box .text table td {
   padding: 0 15px;
+}
+@media (max-width: 575px) {
+  .customer-services section .page-bottom {
+    flex-direction: column;
+    padding: 0 20px;
+    height: 800px;
+  }
+  .customer-services section .page-bottom .left {
+    margin: 0;
+  }
+  .customer-services section .page-bottom .left img {
+    top: 0;
+    width: 100%;
+  }
+  .customer-services section .page-bottom .right h2 {
+    text-align: center;
+  }
+  .customer-services section .page-bottom .right .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .customer-services section .page-bottom .right .box button {
+    margin-bottom: 10px;
+  }
+  .customer-services section .page-bottom .right .box button .bottom-icon {
+    left: 85px;
+  }
+  .customer-services section .page-bottom .right .box h3 {
+    text-align: center;
+    font-size: 18.77px;
+  }
+  .customer-services section .page-bottom .right table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 575px) {
+  .customer-services section {
+    padding: 300px 0 100px 0;
+  }
 }/*# sourceMappingURL=Services.css.map */

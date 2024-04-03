@@ -1,15 +1,19 @@
 .menu-header {
   border-bottom: 1px solid #dbd9d7;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999999;
 }
 .menu-header nav .banner {
-  padding: 0 40px 0 100px;
+  padding: 10px 40px 10px 100px;
 }
 .menu-header nav .banner ul {
   display: flex;
 }
 .menu-header nav .banner ul li {
   margin-right: 5px;
-  padding: 16px 0px;
+  padding: 0;
 }
 .menu-header nav .banner ul li a {
   color: black;
@@ -20,8 +24,11 @@
   border-bottom: 1px solid #00754a;
 }
 @media (max-width: 575px) {
+  .menu-header {
+    position: static;
+  }
   .menu-header nav .banner {
-    padding: 0;
+    padding: 10px;
   }
 }
 

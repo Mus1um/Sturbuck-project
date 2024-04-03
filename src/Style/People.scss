@@ -1,7 +1,10 @@
-.container {
+
   .top-text {
     text-align: center;
     padding: 40px 48px;
+    @media(max-width: 575px){
+      padding: 40px 0 !important;
+    }
     strong {
       font-weight: 700;
       letter-spacing: 8px;
@@ -31,6 +34,7 @@
           background-color: hsl(164 31% 17% / 10%);
         }
       }
+    
   }
   .boxes {
     padding: 40px 220px;
@@ -88,5 +92,19 @@
         }
       }
     }
+    @media(max-width: 575px){
+      padding: 40px 0px;
+      .box{
+        display: block;
+        padding: 0;
+        .image{
+width: 100%;
+        }
+        .text{
+          padding: 20px ;
+          width: 100%;
+        }
+      }
+    }
   }
-}
+

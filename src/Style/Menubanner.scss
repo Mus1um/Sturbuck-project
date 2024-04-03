@@ -1,13 +1,18 @@
 .menu-header {
   border-bottom: 1px solid #dbd9d7;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999999;
+
   nav {
     .banner {
-      padding: 0 40px 0 100px;
+      padding: 10px 40px 10px 100px;
       ul {
         display: flex;
         li {
           margin-right: 5px;
-          padding: 16px 0px;
+          padding: 0 ;
           a {
             color: black;
             font-size: 14px;
@@ -21,9 +26,10 @@
     }
   }
   @media(max-width: 575px){
+    position: static;
     nav{
       .banner{
-        padding: 0 ;
+        padding: 10px ;
       }
     }
   }

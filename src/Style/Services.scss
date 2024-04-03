@@ -60,16 +60,19 @@
             font-size: 15px;
             line-height: 1.5;
           }
-          button {
-            cursor: pointer;
-            margin-right: 1rem;
-            border-radius: 50px;
-            background-color: #00754a;
-            color: white;
-            padding: 5px 11px;
-            border: none;
-            text-align: center;
-            font-size: 14px;
+          .services-buttons {
+            display: flex;
+            button {
+              cursor: pointer;
+              margin-right: 1rem;
+              border-radius: 50px;
+              background-color: #00754a;
+              color: white;
+              padding: 5px 11px;
+              border: none;
+              text-align: center;
+              font-size: 14px;
+            }
           }
         }
       }
@@ -138,9 +141,46 @@
         }
       }
     }
+    @media (max-width: 575px) {
+      .banner {
+        padding: 10px;
+        .left {
+          width: 100%;
+          h1 {
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 0;
+          }
+          .bottom-box {
+            flex-direction: column;
+            .services-buttons {
+              button {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .right {
+        position: static;
+          .mySwiper {
+       top: 290px;
+       left: 0px;
+       width: 100%;
+       .swiper-button-prev{
+left: 160px;
+       }
+       .swiper-button-next{
+right: 160px;
+       }
+            
+          }
+        }
+      }
+    }
   }
   section {
     padding: 48px 0;
+
     .page-center {
       display: flex;
       justify-content: center;
@@ -215,9 +255,9 @@
                 line-height: 1.2;
               }
             }
-            &:hover{
-          transform: scale(1.05);
-          background-color: rgba(212, 233, 226, .33);
+            &:hover {
+              transform: scale(1.05);
+              background-color: rgba(212, 233, 226, 0.33);
             }
           }
         }
@@ -255,6 +295,31 @@
           padding: 7px 16px;
           font-weight: 500;
           font-size: 14px;
+        }
+      }
+      @media (max-width: 575px) {
+        display: block;
+        padding: 20px;
+        .left-cards {
+          margin: 0;
+          h1 {
+            justify-content: center;
+          }
+          .cards {
+            padding: 40px 0;
+
+            grid-template-columns: auto auto;
+            .card {
+              .svg-content {
+                width: auto;
+              }
+            }
+          }
+        }
+        .join {
+          p {
+            width: 300px;
+          }
         }
       }
     }
@@ -317,6 +382,47 @@
           }
         }
       }
+      @media(max-width: 575px){
+        flex-direction: column;
+        padding: 0 20px;
+        height: 800px;
+        .left{
+          margin: 0;
+          img{
+            top: 0;
+            width: 100%;
+          }
+        }
+        .right{
+          h2{
+            text-align: center;
+          }
+          .box{
+            display: flex;
+            flex-direction: column;
+
+            button{
+              margin-bottom: 10px;
+              .bottom-icon{
+             left: 85px;
+              }
+            }
+            h3{
+              text-align: center;
+              font-size: 18.77px;
+            }
+          }
+          table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+    @media(max-width: 575px){
+      padding: 300px 0 100px 0;
     }
   }
 }
