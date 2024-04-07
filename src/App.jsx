@@ -16,6 +16,7 @@ import Featured from "./Pages/Featured.jsx";
 import MainMenu from "./Pages/MainMenu.jsx";
 import MainDrinks from "./Components/MainDrinks.jsx";
 import Product from "./Pages/Product.jsx";
+import MainCard from "./Pages/MainCard.jsx";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
           <Route path="featured" element={<Featured />} />
         </Route>
         <Route path="/rewards" element={<Rewards />} />
-        <Route path="/gift" element={<Card />} />
+        <Route path="/gift" element={<Card />}  />
+        <Route path="/gift/:id" element={<MainCard/>} />
         <Route path="/about-us/" element={<OurCompany />} />
         <Route path="/coffee/" element={<Coffee />} />
         <Route path="/responsibility/people/" element={<People />} />

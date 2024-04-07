@@ -18,6 +18,7 @@ function Card() {
       .then((res) => setData(res.data));
   }
   const cardsCategory = data.map((item) => item.category);
+  const cardsAll=data.map(item=>item.see)
   var settings = {
     dots: true,
     infinite: false,
@@ -55,12 +56,18 @@ function Card() {
   return (
     <div className="gift-cards">
       <div className="carusel-cards">
+        <div className="carusel-texts">
         <h5 className="one-category">{cardsCategory[0]}</h5>
+        <p className="see">{cardsAll[0]}</p>
+        </div>
         <Slider {...settings}>
           {data[0]?.cards.map((item) => (
-            <div className="gift-card" key={item.id}>
+            <Link to={`/gift/${item.id}`} key={item.id}>
+              <div className="gift-card"  >
               <img src={item.img} alt="" />
             </div>
+            </Link>
+          
           ))}
         </Slider>
         <div className="fade">
@@ -91,12 +98,18 @@ function Card() {
       </div>
       {data?.map((categoryData, index) => (
         <div key={index} className="carusel-cards">
-          <h5 className="one-category">{categoryData.category.slice(1)}</h5>
+          <div className="carusel-texts">
+            <h5 className="one-category">{categoryData.category.slice(1)}</h5>
+            <p className="see">{categoryData.see}</p>
+          </div>
           <Slider {...settings}>
             {categoryData.cards.slice(1).map((card) => (
-              <div key={card.id} className="gift-card">
+              <Link to={`/gift/${card.id}`} key={card.id}>
+               <div  className="gift-card">
                 <img src={card.img} alt="" />
               </div>
+              </Link>
+             
             ))}
           </Slider>
         </div>
