@@ -58,7 +58,7 @@ function Card() {
       <div className="carusel-cards">
         <div className="carusel-texts">
         <h5 className="one-category">{cardsCategory[0]}</h5>
-        <p className="see">{cardsAll[0]}</p>
+        <Link to={`/gift/category/${cardsCategory[0]}`} className="see">{cardsAll[0]}</Link>
         </div>
         <Slider {...settings}>
           {data[0]?.cards.map((item) => (
@@ -99,11 +99,11 @@ function Card() {
       {data?.map((categoryData, index) => (
         <div key={index} className="carusel-cards">
           <div className="carusel-texts">
-            <h5 className="one-category">{categoryData.category.slice(1)}</h5>
-            <p className="see">{categoryData.see}</p>
+            <h5 className="one-category">{categoryData.category}</h5>
+            <Link to={`/gift/category/${categoryData.category}`} className="see">{categoryData.see}</Link>
           </div>
           <Slider {...settings}>
-            {categoryData.cards.slice(1).map((card) => (
+            {categoryData.cards.map((card) => (
               <Link to={`/gift/${card.id}`} key={card.id}>
                <div  className="gift-card">
                 <img src={card.img} alt="" />
@@ -113,7 +113,7 @@ function Card() {
             ))}
           </Slider>
         </div>
-      ))}
+      )).slice(1)}
     </div>
   );
 }
