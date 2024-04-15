@@ -1,0 +1,16 @@
+section {
+  padding: 40px;
+}
+section .allcards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+section .allcards .allcard img {
+  border-radius: 10px;
+  width: 441px;
+  transition: 300ms;
+}
+section .allcards .allcard img:hover {
+  transform: translateY(-10px);
+}/*# sourceMappingURL=AllCards.css.map */

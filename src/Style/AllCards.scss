@@ -1,0 +1,18 @@
+section {
+  padding: 40px;
+  .allcards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    .allcard {
+      img {
+        border-radius: 10px;
+        width: 441px;
+        transition: 300ms;
+        &:hover{
+            transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}
