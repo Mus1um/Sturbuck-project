@@ -102,7 +102,7 @@ function Card() {
             <h5 className="one-category">{categoryData.category}</h5>
             <Link to={`/gift/category/${categoryData.category}`} className="see">{categoryData.see}</Link>
           </div>
-          <Slider {...settings}>
+          <Slider {...settings} >
             {categoryData.cards.map((card) => (
               <Link to={`/gift/${card.id}`} key={card.id}>
                <div  className="gift-card">

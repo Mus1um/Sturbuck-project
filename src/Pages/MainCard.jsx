@@ -16,8 +16,9 @@ function MainCard() {
     axios
       .get(`http://localhost:3000/giftcard`)
       .then(res=>{
-       const selectedData=res.data.map(category=>category.cards.find(item=>item.id ===id))
+       const selectedData=res.data.map(category=>category.cards.find(item=>item.id ===id)).find(item=>item!==undefined)
        setCardData(selectedData)
+      console.log(selectedData);
   })
   }
   return (
@@ -33,7 +34,7 @@ function MainCard() {
         </Typography>
       </Breadcrumbs>
       <h1>Create eGift</h1>
-      <img src={cardData[0]?.img} alt="" />
+      <img src={cardData?.img} alt="" />
       <p><sup>*</sup> indicates required field</p>
       <div className="form-bottom-text">
         <div className="select-text">

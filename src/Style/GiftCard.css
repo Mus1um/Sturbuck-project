@@ -19,6 +19,10 @@
   font-weight: 500;
   text-transform: capitalize;
 }
+.gift-cards .carusel-cards .slick-slider .slick-list .slick-track {
+  width: 4932px !important;
+  transform: none !important;
+}
 .gift-cards .carusel-cards .slick-slider .gift-card {
   padding: 10px;
   transition: all 300ms;
