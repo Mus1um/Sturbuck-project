@@ -8,7 +8,7 @@ section .allcards {
 }
 section .allcards .allcard img {
   border-radius: 10px;
-  width: 441px;
+  width: 100%;
   transition: 300ms;
 }
 section .allcards .allcard img:hover {

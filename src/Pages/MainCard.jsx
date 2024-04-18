@@ -7,7 +7,6 @@ import '../Style/MainCard.css'
 
 function MainCard() {
   const { id } = useParams();
-  console.log(id);
   const [cardData,setCardData]=useState([])
   useEffect(() => {
     fetchCardData();
@@ -18,7 +17,6 @@ function MainCard() {
       .then(res=>{
        const selectedData=res.data.map(category=>category.cards.find(item=>item.id ===id)).find(item=>item!==undefined)
        setCardData(selectedData)
-      console.log(selectedData);
   })
   }
   return (

@@ -7,7 +7,7 @@ section {
     .allcard {
       img {
         border-radius: 10px;
-        width: 441px;
+        width: 100%;
         transition: 300ms;
         &:hover{
             transform: translateY(-10px);
