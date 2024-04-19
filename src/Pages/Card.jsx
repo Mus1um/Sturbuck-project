@@ -96,24 +96,40 @@ function Card() {
           </svg>
         </Link>
       </div>
-      {data?.map((categoryData, index) => (
-        <div key={index} className="carusel-cards">
-          <div className="carusel-texts">
-            <h5 className="one-category">{categoryData.category}</h5>
-            <Link to={`/gift/category/${categoryData.category}`} className="see">{categoryData.see}</Link>
-          </div>
-          <Slider {...settings} >
-            {categoryData.cards.map((card) => (
-              <Link to={`/gift/${card.id}`} key={card.id}>
-               <div  className="gift-card">
-                <img src={card.img} alt="" />
-              </div>
+      {data
+        ?.map((categoryData, index) => (
+          <div key={index} className="carusel-cards">
+            <div className="carusel-texts">
+              <h5 className="one-category">{categoryData.category}</h5>
+              <Link
+                to={`/gift/category/${categoryData.category}`}
+                className="see"
+              >
+                {categoryData.see}
               </Link>
-             
-            ))}
-          </Slider>
-        </div>
-      )).slice(1)}
+            </div>
+            <div className="slider-carousel">
+              {categoryData.cards.map((card) =>
+                card.length > 4 ? (
+                  <Slider {...settings}>
+                    <Link to={`/gift/${card.id}`} key={card.id}>
+                      <div className="gift-card">
+                        <img src={card.img} alt="" />
+                      </div>
+                    </Link>
+                  </Slider>
+                ) : (
+                  <Link to={`/gift/${card.id}`} key={card.id}>
+                    <div className="gift-card">
+                      <img src={card.img} alt="" />
+                    </div>
+                  </Link>
+                )
+              )}
+            </div>
+          </div>
+        ))
+        .slice(1)}
     </div>
   );
 }

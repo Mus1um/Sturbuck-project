@@ -18,6 +18,7 @@ import MainDrinks from "./Components/MainDrinks.jsx";
 import Product from "./Pages/Product.jsx";
 import MainCard from "./Pages/MainCard.jsx";
 import AllCards from "./Pages/AllCards.jsx";
+import Basket from "./Pages/Basket.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="" element={<MainMenu />}>
             <Route path="drinks/:id" element={<MainDrinks />} />
           </Route>
+          <Route path="cart" element={<Basket/>}/>
           <Route path="product/:id" element={<Product/>}/>  
           <Route path="previous" element={<Previous />} />
           <Route path="favorites" element={<Favorites />} />

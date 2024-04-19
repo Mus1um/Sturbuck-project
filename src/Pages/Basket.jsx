@@ -1,24 +1,16 @@
-import React, { useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
-import "../Style/Header.css";
-import { Squash as Hamburger, Squash } from "hamburger-react";
-import fotolocation from "../Images/location.png";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { SlArrowDown } from "react-icons/sl";
+import '../Style/Basket.css'
 
-function Header() {
-  const [clicked, setClicked] = useState(false);
-  const {pathname} =useLocation()
-  function handleClick() {
-    setClicked(!clicked);
-    document.body.style.overflow = clicked ? "visible" : "hidden";
-    clicked ? document.getElementById("overlay").classList.remove("overlay-open") : document.getElementById("overlay").classList.add("overlay-open")
-  }
+function Basket() {
   return (
-    <>
-      <div id="overlay"></div>
-      <div className="header" style={{display:pathname==="/menu/cart"? 'none' : 'flex'}}>
-        <div className="head-left">
-          <Link to="/">
-            <svg
+    <div className='basket-page'>
+      <div className="baskets">
+        <div className="basket-left">
+       <div className="head-basket">
+        <Link to='/'>
+        <svg
               aria-hidden="true"
               focusable="false"
               height="100%"
@@ -35,71 +27,29 @@ function Header() {
                 <path d="M53.595 57.01h-1.526v4.105h-.547v-4.105h-1.522v-.51h3.595v.51zM54.236 56.5h.811l1.57 3.618h.011l1.574-3.618h.798v4.615h-.551v-3.869h-.012l-1.653 3.869h-.333l-1.659-3.869h-.011v3.869h-.545v-4.615z"></path>
               </g>
             </svg>
-          </Link>
-          <ul>
-            <li>
-              <NavLink to="/menu">MENU</NavLink>
-            </li>
-            <li>
-              <NavLink to="/rewards">REWARDS</NavLink>
-            </li>
-            <li>
-              <NavLink to="/gift">GIFT CARDS</NavLink>
-            </li>
-          </ul>
-        </div>
-        <div className="head-right">
-          <p>
-            <img src={fotolocation} alt="" />
-            Find a store
-          </p>
-
-          <div className="buttons">
-            <button>
-              <Link>Sign in</Link>
-            </button>
-            <button>
-              <Link>Join now</Link>
-            </button>
-          </div>
-        </div>
-        <div className="response">
-          <Squash size={24} toggle={handleClick} toggled={clicked} />
-        </div>
-
-        <div
-          className="sidebar"
-          style={{ transform: clicked ? "" : "translateX(100%)" }}
-        >
-          <div className="bars">
-            <ul>
-              <li>
-                <NavLink to="/menu">MENU</NavLink>
-              </li>
-              <li>
-                <NavLink to="/rewards">REWARDS</NavLink>
-              </li>
-              <li>
-                <NavLink to="/gift">GIFT CARDS</NavLink>
-              </li>
-            </ul>
-            <div className="buttons">
-              <button>
-                <Link>Sign in</Link>
-              </button>
-              <button>
-                <Link>Join now</Link>
-              </button>
-            </div>
+        </Link>
+       
+        <Link to='/menu'><SlArrowDown className="ls" />  Back to menu</Link>
+       </div>
+       <div className="basket-center">
+        <h1>Rewiev Order (1)</h1>
+        <div className="order">
+          <Link>
             <p>
-              <img src={location} alt="" />
-              Find a store
+              <span>Pickup store</span>
+              <strong>Port baku</strong>
             </p>
-          </div>
+            <SlArrowDown className="sl" />
+          </Link>
+        </div>
+       </div>
+        </div>
+        <div className="basket-right">
+
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 }
 
-export default Header;
+export default Basket

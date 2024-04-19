@@ -19,6 +19,27 @@
   font-weight: 500;
   text-transform: capitalize;
 }
+.gift-cards .carusel-cards .slider-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.gift-cards .carusel-cards .slider-carousel img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px black;
+  border: none;
+}
+.gift-cards .carusel-cards .slick-slider .slick-disabled:before {
+  display: none !important;
+}
+.gift-cards .carusel-cards .slick-slider .slick-prev::before {
+  color: black;
+  font-weight: 200;
+}
+.gift-cards .carusel-cards .slick-slider .slick-next:before {
+  color: black;
+}
 .gift-cards .carusel-cards .slick-slider .gift-card {
   padding: 10px;
   transition: all 300ms;

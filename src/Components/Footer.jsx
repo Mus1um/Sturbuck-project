@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Style/Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SlArrowDown } from "react-icons/sl";
 function Footer() {
   const [clicked, setClicked] = useState(false);
@@ -8,6 +8,7 @@ function Footer() {
   const [clicked3, setClicked3] = useState(false);
   const [clicked4, setClicked4] = useState(false);
   const [clicked5, setClicked5] = useState(false);
+  const {pathname}=useLocation()
   const hadnleClick = () => {
     setClicked(!clicked);
   };
@@ -24,9 +25,9 @@ function Footer() {
     setClicked5(!clicked5);
   };
   return (
-    <div className="footer">
+    <div className="footer" >
       <nav>
-        <div className="navlist">
+        <div className="navlist"  style={{display:pathname==="/menu/cart"? 'none' : 'flex'}}>
           <ul>
             <h2>About Us</h2>
             <li>
@@ -117,7 +118,9 @@ function Footer() {
               <Link>Explore and Find Coffee for Home</Link>
             </li>
           </ul>
-          <div className="footer-response">
+          
+        </div>
+        <div className="footer-response" style={{display:pathname==="/menu/cart"? 'block' : 'none',borderBottom:pathname==='/menu/cart'?'2px solid #0000001a':''}}>
             <div className="box" onClick={hadnleClick} style={{paddingBottom:clicked ? '400px':''}}>
               <h3>About us</h3>
               <SlArrowDown  
@@ -126,10 +129,10 @@ function Footer() {
              
                 <ul style={{display: clicked? 'block':'none'}}>
                   <li>
-                    <Link>Our Company</Link>
+                    <Link to="/about-us/">Our Company</Link>
                   </li>
                   <li>
-                    <Link>Our Coffee</Link>
+                    <Link to="/coffee/">Our Coffee</Link>
                   </li>
                   <li>
                     <Link>Stories and News</Link>
@@ -141,7 +144,7 @@ function Footer() {
                     <Link>Investor Relations</Link>
                   </li>
                   <li>
-                    <Link>Customer Service</Link>
+                    <Link to="/sbux">Customer Service</Link>
                   </li>
                   <li>
                     <Link>Contact Us</Link>
@@ -185,10 +188,10 @@ function Footer() {
              
                 <ul style={{display: clicked3 ? 'block':'none'}}>
                   <li>
-                    <Link>People</Link>
+                    <Link to="/responsibility/people/">People</Link>
                   </li>
                   <li>
-                    <Link>Planet</Link>
+                    <Link to="/responsibility/planet/">Planet</Link>
                   </li>
                   <li>
                     <Link>Environmental and Social Impact Reporting</Link>
@@ -240,7 +243,6 @@ function Footer() {
            
             </div>
           </div>
-        </div>
         <div className="footer-bottom">
           <div className="social">
             <Link>
@@ -274,12 +276,12 @@ function Footer() {
               </svg>
             </Link>
           </div>
-          <div className="bottom">
+          <div className="bottom" >
             <ul>
               <li>
                 <Link>Privacy Notice</Link>
               </li>
-              <li className="bar">
+              <li className="bar" >
                 <span>|</span>
                 <Link>Terms of Use</Link>
               </li>

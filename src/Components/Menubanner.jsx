@@ -21,7 +21,7 @@ function Menubanner() {
   }
 
   return (
-    <div className="menu-header">
+    <div className="menu-header" style={{display:pathname==="/menu/cart"? 'none' : 'flex'}}>
       <nav>
         <div
           className={`banner ${

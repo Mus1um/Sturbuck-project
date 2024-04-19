@@ -33,11 +33,12 @@
 .footer nav .navlist ul li a:hover {
   color: black;
 }
-.footer nav .navlist .footer-response {
+.footer nav .footer-response {
   display: none;
   width: 100%;
+  min-height: 60vh;
 }
-.footer nav .navlist .footer-response .box {
+.footer nav .footer-response .box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,27 +46,42 @@
   position: relative;
   transition: all 300ms;
 }
-.footer nav .navlist .footer-response .box .h3 {
+.footer nav .footer-response .box .h3 {
   font-weight: 400;
   font-size: 16px;
 }
-.footer nav .navlist .footer-response .box .icon {
+.footer nav .footer-response .box .icon {
   transition: all 300ms;
 }
-.footer nav .navlist .footer-response .box .icon2 {
+.footer nav .footer-response .box .icon2 {
   transform: rotate(180deg);
   transition: all 300ms;
 }
-.footer nav .navlist .footer-response .box ul {
+.footer nav .footer-response .box ul {
   position: absolute;
   left: 0;
   top: 40px;
   display: block;
 }
+.footer nav .footer-response .box ul li {
+  max-width: 200px;
+  padding: 18px 0;
+}
+.footer nav .footer-response .box ul li a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.58);
+}
+.footer nav .footer-response .box ul li a:hover {
+  color: black;
+}
 @media (max-width: 575px) {
-  .footer nav .navlist .footer-response {
+  .footer nav .footer-response {
     display: block;
   }
+}
+.footer nav .footer-bottom .social {
+  padding: 20px 0;
 }
 .footer nav .footer-bottom .social a {
   position: relative;

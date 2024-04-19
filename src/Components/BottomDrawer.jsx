@@ -26,13 +26,13 @@ function BottomDrawer() {
   };
 
   return (
-    <div className="bottomdrawer">
+    <div className="bottomdrawer" style={{display:pathname==="/menu/cart"? 'none' : 'block'}}>
       <div className="modal" style={{ display: selected ? "flex" : "none" }}>
         <div className="box" style={{ transform: selected ? "scale(1)" : "" }}>
           <p>Please select a store before continuing to the cart.</p>
           <div className="buttons">
             <Link onClick={handleselected}>Cancel</Link>
-            <Link>Select Store</Link>
+            <Link to='cart' >Select Store</Link>
           </div>
         </div>
       </div>

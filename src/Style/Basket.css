@@ -1,0 +1,62 @@
+.basket-page .baskets .basket-left {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #1e3932;
+}
+.basket-page .baskets .basket-left .head-basket {
+  display: flex;
+  align-items: center;
+}
+.basket-page .baskets .basket-left .head-basket a {
+  margin: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+}
+.basket-page .baskets .basket-left .head-basket a svg {
+  width: 49px;
+  height: 49px;
+}
+.basket-page .baskets .basket-left .head-basket a .ls {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  transform: rotate(90deg);
+}
+.basket-page .baskets .basket-left .basket-center {
+  margin-top: 208px;
+  padding: 0 40px;
+}
+.basket-page .baskets .basket-left .basket-center h1 {
+  color: white;
+}
+.basket-page .baskets .basket-left .basket-center .order {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7019607843);
+  width: 100%;
+}
+.basket-page .baskets .basket-left .basket-center .order a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-page .baskets .basket-left .basket-center .order a p {
+  display: flex;
+  flex-direction: column;
+}
+.basket-page .baskets .basket-left .basket-center .order a p span {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.basket-page .baskets .basket-left .basket-center .order a p strong {
+  padding: 8px 0;
+  color: white;
+}
+.basket-page .baskets .basket-left .basket-center .order a .sl {
+  color: white;
+  font-size: 12px;
+}/*# sourceMappingURL=Basket.css.map */

@@ -1,0 +1,68 @@
+.basket-page {
+  .baskets {
+    .basket-left {
+      z-index: 999;
+      position: fixed;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      background-color: #1e3932;
+      .head-basket {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: 20px;
+          color: white;
+          font-weight: 700;
+          font-size: 16px;
+          align-items: center;
+          display: flex;
+          svg {
+            width: 49px;
+            height: 49px;
+          }
+          .ls {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .basket-center {
+        margin-top: 208px;
+        padding: 0 40px;
+        h1 {
+          color: white;
+        }
+        .order {
+          border-bottom: 1px solid #ffffffb3;
+         width: 100%;
+     
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              display: flex;
+              flex-direction: column;
+              span {
+                font-weight: 400;
+                color: #ffffffb3;
+              }
+              strong {
+                padding: 8px 0;
+                color: white;
+              }
+            }
+            .sl {
+              color: white;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

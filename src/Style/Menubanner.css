@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 9999999;
+  z-index: 9999;
 }
 .menu-header nav .banner {
   padding: 10px 40px 10px 100px;
