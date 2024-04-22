@@ -14,5 +14,8 @@ section {
         }
       }
     }
+    @media (max-width:575px){
+      grid-template-columns: repeat(2,auto);
+    }
   }
 }

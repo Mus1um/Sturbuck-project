@@ -60,6 +60,25 @@
   color: white;
   font-size: 12px;
 }
+@media (max-width: 575px) {
+  .basket-page .baskets .basket-left .basket-center {
+    margin-top: 0;
+  }
+  .basket-page .baskets .basket-left .basket-center h1 {
+    font-size: 19px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .basket-page .baskets .basket-left {
+    padding: 40px 0;
+    width: 100%;
+    position: static;
+  }
+  .basket-page .baskets .basket-left .head-basket a:nth-child(1) {
+    display: none;
+  }
+}
 .basket-page .baskets .basket-right {
   display: flex;
   justify-content: end;
@@ -67,4 +86,62 @@
 .basket-page .baskets .basket-right .basket-right-content {
   width: 60%;
   padding: 20px;
+}
+.basket-page .baskets .basket-right .basket-right-content .add-box {
+  margin-bottom: 200px;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response {
+  display: block;
+  width: 100%;
+  min-height: 60vh;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+  transition: all 300ms;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box .h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box .icon {
+  transition: all 300ms;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box .icon2 {
+  transform: rotate(180deg);
+  transition: all 300ms;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box ul {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: block;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box ul li {
+  max-width: 200px;
+  padding: 18px 0;
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box ul li a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.58);
+}
+.basket-page .baskets .basket-right .basket-right-content .footer-response .box ul li a:hover {
+  color: black;
+}
+@media (max-width: 575px) {
+  .basket-page .baskets .basket-right .basket-right-content .footer-response {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .basket-page .baskets .basket-right {
+    display: block;
+  }
+  .basket-page .baskets .basket-right .basket-right-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Basket.css.map */

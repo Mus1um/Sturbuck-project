@@ -13,4 +13,9 @@ section .allcards .allcard img {
 }
 section .allcards .allcard img:hover {
   transform: translateY(-10px);
+}
+@media (max-width: 575px) {
+  section .allcards {
+    grid-template-columns: repeat(2, auto);
+  }
 }/*# sourceMappingURL=AllCards.css.map */

@@ -39,7 +39,7 @@ function Card() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 4,
           initialSlide: 2,
         },
@@ -47,8 +47,8 @@ function Card() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],

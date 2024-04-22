@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SlArrowDown } from "react-icons/sl";
 import '../Style/Basket.css'
@@ -6,6 +6,26 @@ import DataContext from '../context/DataContext';
 
 function Basket() {
   const {basketData,setBasketData}=useContext(DataContext)
+  const [clicked, setClicked] = useState(false);
+  const [clicked2, setClicked2] = useState(false);
+  const [clicked3, setClicked3] = useState(false);
+  const [clicked4, setClicked4] = useState(false);
+  const [clicked5, setClicked5] = useState(false);
+  const hadnleClick = () => {
+    setClicked(!clicked);
+  };
+  const hadnleClick2 = () => {
+    setClicked2(!clicked2);
+  };
+  const hadnleClick3 = () => {
+    setClicked3(!clicked3);
+  };
+  const handleClick4 = () => {
+    setClicked4(!clicked4);
+  };
+  const handleClick5 = () => {
+    setClicked5(!clicked5);
+  };
   return (
     <div className='basket-page'>
       <div className="baskets">
@@ -50,13 +70,140 @@ function Basket() {
           <div className="basket-right-content">
             {
               basketData.map(item=>(
-                <div>
+                <div className='add-box'>
                   <h1>{item.name}</h1>
                 </div>
               ))
             }
-          </div>
+           
+                 <div className="footer-response">
+            <div className="box" onClick={hadnleClick} style={{paddingBottom:clicked ? '400px':''}}>
+              <h3>About us</h3>
+              <SlArrowDown  
+                className={clicked ? "icon2" : "icon"}
+              />
+             
+                <ul style={{display: clicked? 'block':'none'}}>
+                  <li>
+                    <Link to="/about-us/">Our Company</Link>
+                  </li>
+                  <li>
+                    <Link to="/coffee/">Our Coffee</Link>
+                  </li>
+                  <li>
+                    <Link>Stories and News</Link>
+                  </li>
+                  <li>
+                    <Link>Starbucks Archive</Link>
+                  </li>
+                  <li>
+                    <Link>Investor Relations</Link>
+                  </li>
+                  <li>
+                    <Link to="/sbux">Customer Service</Link>
+                  </li>
+                  <li>
+                    <Link>Contact Us</Link>
+                  </li>
+                </ul>
+              
+            </div>
+            <div className="box" onClick={hadnleClick2} style={{paddingBottom:clicked2 ? '320px':''}}>
+              <h3>Careers</h3>
 
+              <SlArrowDown
+                
+                className={clicked2 ? "icon2" : "icon"}
+              />
+              
+                <ul  style={{display: clicked2 ? 'block':'none'}}>
+                  <li>
+                    <Link>Culture and Values</Link>
+                  </li>
+                  <li>
+                    <Link>Inclusion, Diversity, and Equity</Link>
+                  </li>
+                  <li>
+                    <Link>College Achievement Plan</Link>
+                  </li>
+                  <li>
+                    <Link>Alumni Community</Link>
+                  </li>
+                  <li>
+                    <Link>U.S. Careers</Link>
+                  </li>
+                  <li>
+                    <Link>International Careers</Link>
+                  </li>
+                </ul>
+              
+            </div>
+            <div className="box" onClick={hadnleClick3} style={{paddingBottom:clicked3 ? '200px':''}}> 
+              <h3>Social Impact</h3>
+              <SlArrowDown   className={clicked3 ? "icon2" : "icon"}/>
+             
+                <ul style={{display: clicked3 ? 'block':'none'}}>
+                  <li>
+                    <Link to="/responsibility/people/">People</Link>
+                  </li>
+                  <li>
+                    <Link to="/responsibility/planet/">Planet</Link>
+                  </li>
+                  <li>
+                    <Link>Environmental and Social Impact Reporting</Link>
+                  </li>
+                </ul>
+             
+            </div>
+            <div className="box" onClick={handleClick4} style={{paddingBottom:clicked4 ? '220px':''}}>
+              <h3>For Business Partners</h3>
+              <SlArrowDown   className={clicked4 ? "icon2" : "icon"} />
+            
+                <ul style={{display: clicked4 ? 'block':'none'}}>
+                  <li>
+                    <Link>Landlord Support Center</Link>
+                  </li>
+                  <li>
+                    <Link>Suppliers</Link>
+                  </li>
+                  <li>
+                    <Link>Corporate Gift Card Sales</Link>
+                  </li>
+                  <li>
+                    <Link>Office and Foodservice Coffee</Link>
+                  </li>
+                </ul>
+             
+            </div>
+            <div className="box" onClick={handleClick5} style={{paddingBottom:clicked5 ? '300px':''}}>
+              <h3>Order and Pick Up</h3>
+              <SlArrowDown  className={clicked5 ? "icon2" : "icon"} />
+              
+                <ul style={{display: clicked5 ? 'block':'none'}}>
+                  <li>
+                    <Link>Order on the App</Link>
+                  </li>
+                  <li>
+                    <Link>Order on the Web</Link>
+                  </li>
+                  <li>
+                    <Link>Delivery</Link>
+                  </li>
+                  <li>
+                    <Link>Order and Pick Up Options</Link>
+                  </li>
+                  <li>
+                    <Link>Explore and Find Coffee for Home</Link>
+                  </li>
+                </ul>
+           
+            </div>
+          </div>
+        
+          
+         
+          </div>
+          
         </div>
       </div>
     </div>
