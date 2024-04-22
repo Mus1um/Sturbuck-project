@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../Style/InsideProduct.css";
 import { SlLocationPin } from "react-icons/sl";
 import { GiFairyWand } from "react-icons/gi";
@@ -11,11 +11,14 @@ import size14active from "../Images/size14active.svg";
 import size16active from "../Images/size16active.svg";
 import size20active from "../Images/size20active.svg";
 import { Link } from "react-router-dom";
+import DataContext from "../context/DataContext";
 
 function InsideProduct(props) {
   const data = props.data;
   const sizes = data.sizes || [];
   const [active, setActive] = useState(1);
+
+  const {basketData,setBasketData}=useContext(DataContext)
   const handleSizeClick = (index) => {
     setActive(index);
   };
@@ -27,6 +30,11 @@ function InsideProduct(props) {
     size20active,
     size20active,
   ];
+
+  const handleAddBasket=()=>{
+    setBasketData([...basketData,data])
+    console.log(basketData);
+  }
 
   return (
     <div>
@@ -135,6 +143,12 @@ function InsideProduct(props) {
             <p>140 calories, 25g sugar, 2.5g fat</p>
             <Link>Full nutrition & ingredients list</Link>
           </div>
+          <button
+            onClick={handleAddBasket}
+            className="btn-add"
+          >
+            Add to Order
+          </button>
         </div>
       </main>
     </div>

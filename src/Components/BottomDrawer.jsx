@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import "../Style/BottomDrawer.css";
 import { SlArrowDown } from "react-icons/sl";
 
 import { IoBag } from "react-icons/io5";
+import DataContext from "../context/DataContext";
 
 function BottomDrawer() {
   const [selected, setSelected] = useState(false);
   const [btnClick, setBtnClick] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
+  const {basketData,setBasketData}=useContext(DataContext)
   const {pathname}=useLocation()
   const {id} =useParams()
   const handleselected = () => {
@@ -16,14 +17,7 @@ function BottomDrawer() {
 
     document.body.style.overflow = selected ? "visible" : "hidden";
   };
-  const handleBtnClick = () => {
-    setBtnClick(true)
-    if ( clickCount < 15) {
-        setClickCount(click=>click+1)  
-    }else{
-        alert('Maximum order is 15 items. Please adjust your order.')
-    }
-  };
+
 
   return (
     <div className="bottomdrawer" style={{display:pathname==="/menu/cart"? 'none' : 'block'}}>
@@ -47,7 +41,7 @@ function BottomDrawer() {
           </Link>
         </div>
         <div className="right">
-          <h3>{clickCount>0? clickCount :''}</h3>
+          <h3>{basketData.length}</h3>
           <button onClick={handleselected}>
             <IoBag
               className="bag"
@@ -56,9 +50,6 @@ function BottomDrawer() {
           </button>
         </div>
       </div>
-      <button onClick={handleBtnClick} className="btn-add" style={{display:pathname===`/menu/product/${id}`? 'block':'none'}}>
-        Add to Order
-      </button>
     </div>
   );
 }

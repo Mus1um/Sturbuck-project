@@ -59,4 +59,12 @@
 .basket-page .baskets .basket-left .basket-center .order a .sl {
   color: white;
   font-size: 12px;
+}
+.basket-page .baskets .basket-right {
+  display: flex;
+  justify-content: end;
+}
+.basket-page .baskets .basket-right .basket-right-content {
+  width: 60%;
+  padding: 20px;
 }/*# sourceMappingURL=Basket.css.map */

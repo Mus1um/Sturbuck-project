@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { SlArrowDown } from "react-icons/sl";
 import '../Style/Basket.css'
+import DataContext from '../context/DataContext';
 
 function Basket() {
+  const {basketData,setBasketData}=useContext(DataContext)
   return (
     <div className='basket-page'>
       <div className="baskets">
@@ -32,7 +34,7 @@ function Basket() {
         <Link to='/menu'><SlArrowDown className="ls" />  Back to menu</Link>
        </div>
        <div className="basket-center">
-        <h1>Rewiev Order (1)</h1>
+        <h1>Rewiev Order ({basketData.length})</h1>
         <div className="order">
           <Link>
             <p>
@@ -45,6 +47,15 @@ function Basket() {
        </div>
         </div>
         <div className="basket-right">
+          <div className="basket-right-content">
+            {
+              basketData.map(item=>(
+                <div>
+                  <h1>{item.name}</h1>
+                </div>
+              ))
+            }
+          </div>
 
         </div>
       </div>

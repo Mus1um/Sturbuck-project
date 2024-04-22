@@ -64,5 +64,13 @@
         }
       }
     }
+    .basket-right{
+      display: flex;
+      justify-content: end;
+      .basket-right-content{
+        width: 60%;
+        padding: 20px;
+      }
+    }
   }
 }

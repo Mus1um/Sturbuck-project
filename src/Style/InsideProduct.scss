@@ -230,10 +230,25 @@ padding: 40px 131px;
         font-size: 16px;
         font-weight: 600;
       }
+     
       @media(max-width: 575px){
         padding: 40px 10px;
 
       }
+    }
+    .btn-add{
+      transition: all 2s ease;
+      background-color: #00754a;
+      color: white;
+      padding: 18px 24px;
+      border-radius: 50px;
+      border: none;
+      font-size: 19px;
+      text-align: center;
+      box-shadow: 0 0 5px gray;
+      position: fixed;
+      bottom: 150px;
+      right: 40px;
     }
 
   }

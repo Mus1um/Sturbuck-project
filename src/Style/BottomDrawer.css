@@ -96,21 +96,8 @@
 }
 .bottomdrawer .drawer .right h3 {
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-}
-.bottomdrawer .btn-add {
-  transition: all 2s ease;
-  background-color: #00754a;
-  color: white;
-  padding: 18px 24px;
-  border-radius: 50px;
-  border: none;
-  font-size: 19px;
-  text-align: center;
-  box-shadow: 0 0 5px gray;
-  position: fixed;
-  bottom: 150px;
-  right: 40px;
 }/*# sourceMappingURL=BottomDrawer.css.map */

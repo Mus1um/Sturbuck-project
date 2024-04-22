@@ -25,9 +25,9 @@ function Footer() {
     setClicked5(!clicked5);
   };
   return (
-    <div className="footer" >
+    <div className="footer" style={{display:pathname==="/menu/cart" && 'none'}} >
       <nav>
-        <div className="navlist"  style={{display:pathname==="/menu/cart"? 'none' : 'flex'}}>
+        <div className="navlist">
           <ul>
             <h2>About Us</h2>
             <li>
@@ -120,7 +120,7 @@ function Footer() {
           </ul>
           
         </div>
-        <div className="footer-response" style={{display:pathname==="/menu/cart"? 'block' : 'none',borderBottom:pathname==='/menu/cart'?'2px solid #0000001a':''}}>
+        <div className="footer-response">
             <div className="box" onClick={hadnleClick} style={{paddingBottom:clicked ? '400px':''}}>
               <h3>About us</h3>
               <SlArrowDown  
