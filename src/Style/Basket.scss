@@ -86,11 +86,17 @@
     }
     .basket-right {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
+      max-height: 100vh; 
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+      }
       .basket-right-content {
+       
         width: 60%;
         padding: 20px;
-        margin-top: 100px;
 
         .add-card {
           padding: 20px 0;

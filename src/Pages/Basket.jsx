@@ -14,10 +14,7 @@ function Basket() {
   };
 
   const handlePlus = (ID) => {
-    setBasketData((prevData) => [
-      ...prevData,
-      prevData.find((item) => item.id === ID),
-    ]);
+    setBasketData((prevData) => [...prevData,prevData.find((item) => item.id === ID)]);
   };
   return (
     <div className="basket-page">

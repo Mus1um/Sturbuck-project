@@ -8,7 +8,7 @@ import DataContext from "../context/DataContext";
 
 function BottomDrawer() {
   const [selected, setSelected] = useState(false);
-  const [btnClick, setBtnClick] = useState(false);
+  // const [btnClick, setBtnClick] = useState(false);
   const {basketData,setBasketData}=useContext(DataContext)
   const {pathname}=useLocation()
   const {id} =useParams()
@@ -41,11 +41,11 @@ function BottomDrawer() {
           </Link>
         </div>
         <div className="right">
-          <h3>{basketData.length}</h3>
+          <h3>{basketData.length!==0 && basketData.length}</h3>
           <button onClick={handleselected}>
             <IoBag
               className="bag"
-              style={{ color: btnClick ? "#00a862" : "" }}
+              style={{ color: basketData.length>0  ? "#00a862" : "" }}
             />
           </button>
         </div>
