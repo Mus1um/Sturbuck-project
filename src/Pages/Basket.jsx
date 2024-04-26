@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SlArrowDown } from "react-icons/sl";
 import "../Style/Basket.css";
@@ -9,9 +9,7 @@ import DataContext from "../context/DataContext";
 
 function Basket() {
   const { basketData, setBasketData } = useContext(DataContext);
-  const handleMinus = (index) => {
-    setBasketData((prevData) => prevData.filter((item, idx) => idx !== index));
-  };
+
 
   const handlePlus = (ID) => {
     setBasketData((prevData) => [...prevData,prevData.find((item) => item.id === ID)]);

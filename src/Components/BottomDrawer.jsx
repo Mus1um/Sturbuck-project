@@ -8,7 +8,6 @@ import DataContext from "../context/DataContext";
 
 function BottomDrawer() {
   const [selected, setSelected] = useState(false);
-  // const [btnClick, setBtnClick] = useState(false);
   const {basketData,setBasketData}=useContext(DataContext)
   const {pathname}=useLocation()
   const {id} =useParams()

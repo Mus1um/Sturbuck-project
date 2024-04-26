@@ -4,10 +4,6 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import axios from "axios";
 import "../Style/MainCard.css";
-
-// import TextField from "@mui/material/TextField";
-// import Stack from "@mui/material/Stack";
-// import Autocomplete from "@mui/material/Autocomplete";
 function MainCard() {
   const { id } = useParams();
   const [cardData, setCardData] = useState([]);
@@ -52,16 +48,6 @@ function MainCard() {
             <h2>Who are you gifting to?</h2>
             <input type="text" />
             <input type="text" id="" />
-            {/* <Stack spacing={2} sx={{ width: 300 }}>
-              <Autocomplete
-                id="free-solo-demo"
-                freeSolo
-                options={top100Films.map((option) => option.title)}
-                renderInput={(params) => (
-                  <TextField {...params} label="freeSolo" />
-                )}
-              />
-            </Stack> */}
           </div>
           <div className="add-recipient">
             <p>Maximum of 10 recipients</p>
